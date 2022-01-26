@@ -1,0 +1,891 @@
+<HBProfile>
+	<Name>Human Starter</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>10</MaxLevel>
+  
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+  
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>False</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+  
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+  
+	<AvoidMobs>
+		<Mob Name="Garginox" Entry="45681" />
+		<Mob Name="Landlocked Grouper" Entry="45664" />
+		<Mob Name="Midsummer Celebrant" Entry="16781" />
+		<!-- Northshire -->
+		<Mob Name="Training Dummy" Entry="44548" />
+		<!-- Elwynn Forest -->
+		<Mob Name="Fedfennel" Entry="472" />
+	</AvoidMobs>
+	
+	<Blackspots>
+			<Blackspot X="-5516.001" Y="-3386.498" Z="278.4626" Radius="32.40734" />
+			<Blackspot X="-545.1632" Y="-4570.106" Z="11.93347" Radius="78.53169" />
+			<Blackspot X="1468.338" Y="-1406.357" Z="61.51985" Radius="53.40335" />
+			<Blackspot X="1546.37" Y="-1485.264" Z="63.03589" Radius="55.24517" />
+			<Blackspot X="1529.911" Y="-1627.633" Z="70.29951" Radius="79.41965" />
+			<Blackspot X="1563.263" Y="-1626.189" Z="67.84369" Radius="84.48022" />
+			<Blackspot X="1958.073" Y="-2405.169" Z="61.16305" Radius="7.710938" />
+			<Blackspot X="1974.155" Y="-2472.759" Z="61.24541" Radius="6.757856" />
+			<Blackspot X="1384.969" Y="-1521.306" Z="56.81214" Radius="23.125" />
+			<Blackspot X="-6913.565" Y="-3480.883" Z="242.563" Radius="85.37571" />
+			<Blackspot X="73.8718" Y="-2438.773" Z="124.9895" Radius="30" /> 
+			<Blackspot X="113.7116" Y="-2454.407" Z="121.8866" Radius="30" /> 
+			<Blackspot X="107.0908" Y="-2493.105" Z="120.5747" Radius="30" /> 
+			<Blackspot X="72.2145" Y="-2528.835" Z="118.8243" Radius="30" /> 
+			<Blackspot X="56.863" Y="-2476.407" Z="124.3176" Radius="30" /> 
+			<Blackspot X="-8085.75" Y="-1884.997" Z="134.6046" Radius="65.43249" />
+			<Blackspot X="-10437.79" Y="-3243.199" Z="22.87132" Radius="111.0495" />
+			<Blackspot X="-10408.71" Y="-2615.271" Z="22.71787" Radius="30.95999" />
+			<Blackspot X="-11250.71" Y="-3754.429" Z="1.632197" Radius="45.23685" />
+			<Blackspot X="-11258.76" Y="-3745.705" Z="8.525477" Radius="13.98042" />
+			<Blackspot X="-1469.433" Y="1411.747" Z="35.55615" Radius="1.97401" />
+			<Blackspot X="-8906.482" Y="-129.4137" Z="81.03415" Radius="3" />
+      <Blackspot X="-9465.926" Y="34.53046" Z="56.96679" Radius="0.4605662" />
+	</Blackspots>
+	
+	<Mailboxes>
+		<!-- Northshire -->
+		<Mailbox X="-8908.27" Y="-129.904" Z="80.91549" />
+		<!-- Goldshire -->
+		<Mailbox X="-9456.721" Y="46.77825" Z="56.60653" />
+	</Mailboxes>
+	
+	<Vendors>
+		<!-- Human -->
+		<Vendor Name="Ashley Blank" Entry="43278" Type="Train" TrainClass="Hunter" X="-8924.651" Y="-149.9028" Z="81.36338" />
+		<Vendor Name="Llane Beshere" Entry="911" Type="Train" TrainClass="Warrior" X="-8918.364" Y="-208.4109" Z="82.1258" />
+		<Vendor Name="Brother Sammuel" Entry="925" Type="Train" TrainClass="Paladin" X="-8914.567" Y="-215.0163" Z="82.11678" />
+		<Vendor Name="Jorik Kerridan" Entry="915" Type="Train" TrainClass="Rogue" X="-8863.468" Y="-210.9055" Z="80.57269" />
+		<Vendor Name="Priestess Anetta" Entry="375" Type="Train" TrainClass="Priest" X="-8853.587" Y="-193.336" Z="81.93322" />
+		<Vendor Name="Khelden Bremen" Entry="198" Type="Train" TrainClass="Mage" X="-8851.57" Y="-188.234" Z="89.31389" />
+		<Vendor Name="Drusilla La Salle" Entry="459" Type="Train" TrainClass="Warlock" X="-8926.743" Y="-195.5889" Z="80.58879" />
+		<Vendor Name="Janos Hammerknuckle" Entry="78" Type="Repair" X="-8909.458" Y="-104.1632" Z="81.84879" />
+		<Vendor Name="Dermot Johns" Entry="190" Type="Repair" X="-8897.71" Y="-115.3281" Z="81.84091" />
+		<Vendor Name="Brother Danil" Entry="152" Type="Food" X="-8901.59" Y="-112.716" Z="81.84885" />
+	</Vendors>
+	
+<!-- Quest Overrides -->
+
+<Quest Id="29078" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="29079" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="29081" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28757" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28769" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28792" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28762" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28770" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28793" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28763" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28771" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28794" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28764" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28772" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28795" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28765" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28773" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28796" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28766" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28774" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28797" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28767" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28759" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="28791" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="31139" Name="Beating Them Back!">
+  <Objective Type="KillMob" MobId="49871" Name="Blackrock Battle Worg" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-8958.154" Y="-80.83405" Z="88.98129" />
+      <Hotspot X="-8919.426" Y="-68.74912" Z="88.47423" />
+      <Hotspot X="-8880.167" Y="-75.74621" Z="83.92464" />
+      <Hotspot X="-8840.186" Y="-78.1674" Z="84.82263" />
+      <Hotspot X="-8809.916" Y="-105.1465" Z="82.71002" />
+      <Hotspot X="-8801.976" Y="-144.6837" Z="83.79384" />
+      <Hotspot X="-8835.877" Y="-281.2993" Z="78.69324" />
+      <Hotspot X="-8874.22" Y="-268.3695" Z="79.37321" />
+      <Hotspot X="-8914.14" Y="-261.2157" Z="79.26382" />
+      <Hotspot X="-8952.17" Y="-246.9801" Z="76.30857" />
+      <Hotspot X="-8982.688" Y="-220.0907" Z="73.41564" />
+      <Hotspot X="-9012.228" Y="-193.0756" Z="75.91419" />
+      <Hotspot X="-9018.776" Y="-153.7136" Z="82.65541" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="31140" Name="Lions for Lambs">
+  <Objective Type="KillMob" MobId="49874" Name="Blackrock Spy" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8969.976" Y="-48.67243" Z="91.34186" />
+      <Hotspot X="-8931.351" Y="-60.94546" Z="89.95464" />
+      <Hotspot X="-8892.042" Y="-70.46044" Z="85.79647" />
+      <Hotspot X="-8853.346" Y="-81.99323" Z="84.00779" />
+      <Hotspot X="-8814.429" Y="-91.27989" Z="84.37228" />
+      <Hotspot X="-8780.724" Y="-69.55972" Z="90.93768" />
+      <Hotspot X="-8948.482" Y="-247.3788" Z="77.25259" />
+      <Hotspot X="-8976.379" Y="-217.9141" Z="74.15774" />
+      <Hotspot X="-9007.957" Y="-193.1736" Z="75.60862" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="31144" Name="They Sent Assassins">
+  <Objective Type="KillMob" MobId="50039" Name="Goblin Assassin" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-8830.578" Y="-157.8745" Z="79.84439" />
+      <Hotspot X="-8796.484" Y="-137.0993" Z="83.21941" />
+      <Hotspot X="-8761.693" Y="-117.1458" Z="83.78563" />
+      <Hotspot X="-8730.079" Y="-92.8419" Z="90.40711" />
+      <Hotspot X="-8721.802" Y="-132.1672" Z="86.21375" />
+      <Hotspot X="-8739.668" Y="-167.9823" Z="85.18967" />
+      <Hotspot X="-8765.567" Y="-198.4877" Z="85.81735" />
+      <Hotspot X="-8784.961" Y="-234.0805" Z="84.09044" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="26389" Name="Blackrock Invasion">
+  <Objective Type="CollectItem" ItemId="58361" Name="Blackrock Orc Weapon" KillCount="8">
+    <Hotspots>
+      <Hotspot X="-9018.247" Y="-333.0823" Z="74.41655" />
+      <Hotspot X="-9055.313" Y="-316.4948" Z="73.45457" />
+      <Hotspot X="-9095.862" Y="-317.4147" Z="73.35751" />
+      <Hotspot X="-9095.801" Y="-357.5924" Z="73.45191" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<Quest Id="26390" Name="Ending the Invasion!">
+  <Objective Type="KillMob" MobId="42938" Name="Kurtok the Slayer" KillCount="1">
+    <Hotspots>
+      <Hotspot X="-8883.111" Y="-442.0399" Z="68.05991" />
+    </Hotspots>
+  </Objective>
+</Quest>
+<!-- End of Quest Overrides -->
+  
+<QuestOrder>
+    <!--Level load-->
+  <If Condition="Me.Level &gt;= 5 &amp;&amp; Me.Level &lt; 11" >
+	 <CustomBehavior File="LoadProfile" ProfileName="[A]5-11 Dun Morogh" />
+  </If>
+	<CustomBehavior File="Message" Text="Compiling Elwynn Forest Quests" LogColor="Green" />	  
+	<CustomBehavior File="Message" Text="Compiling Northshire Abbey Quests" LogColor="CornflowerBlue" />
+	<CustomBehavior File="UserSettings" DrinkAmount="20" FoodAmount="20" FindVendorsAutomatically="True" TrainNewSkills="False" UseFlightPaths="True" PullDistance="25" LootMobs="True" UseMount="True"/>
+	<CustomBehavior File="RunMacro" Macro="/script SetCVar('AutoLootDefault', 1)" NumOfTimes="1" WaitTime="1000" />
+	       <!--///////////////////////////////////////////////////////////////
+                            START QUEST
+    ///////////////////////////////////////////////////////////////-->
+	<!-- Human & in Elwynn Forest-->
+	
+	<!-- Hunter only -->
+	<If Condition="Me.Class == WoWClass.Hunter" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28767" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28767" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28767" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28759" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28759" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28759" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Etched Letter" QuestId="26910" GiverName="Marshal McBride" GiverId="197" />
+	<TurnIn QuestName="Etched Letter" QuestId="26910" TurnInName="Ashley Blank" TurnInId="43278" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <PickUp QuestName="The Hunter's Path" QuestId="26917" GiverName="Ashley Blank" GiverId="43278" />
+  <While Condition="!HasSpell(56641)" >
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+	  <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>
+	<While Condition="!IsQuestCompleted(26917)" >
+		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+			Text="This class quest is impossible to do properly.  QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+		<CustomBehavior File="CastSpellOn" QuestId="26917" SpellId="56641" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+	</While>
+  <TurnIn QuestName="The Hunter's Path" QuestId="26917" TurnInName="Ashley Blank" TurnInId="43278" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28780" GiverName="Ashley Blank" GiverId="43278" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28780" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28791" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28806" GiverName="Brother Paxton" GiverId="951" />
+	<While Condition="!IsQuestCompleted(28806)" >
+			<CustomBehavior File="InteractWith" QuestId="28806" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28791" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28791" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28806" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28817" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28817" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- Warrior Only -->
+	<If Condition="Me.Class == WoWClass.Warrior" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28766" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28766" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28766" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28774" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28774" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28774" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Simple Letter" QuestId="3100" GiverName="Marshal McBride" GiverId="197" />
+	<TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Charging into Battle" QuestId="26913" GiverId="911" />
+	<While Condition="!HasSpell(100)" >
+		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>
+	<While Condition="!IsQuestCompleted(26913)" >
+	 <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+	 Text="This class quest is impossible to do properly.  QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+	 <RunTo QuestId="26913" X="-8946.368" Y="-146.042" Z="82.15112" />
+	 <CustomBehavior File="CastSpellOn" QuestId="26913" SpellId="100" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+	</While>
+	<TurnIn QuestName="Charging into Battle" QuestId="26913" TurnInId="911" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28789" GiverName="Llane Beshere" GiverId="911" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28789" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28797" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28813" GiverName="Brother Paxton" GiverId="951" />
+	<While Condition="!IsQuestCompleted(28813)" >
+		<CustomBehavior File="InteractWith" QuestId="28813" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28797" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28797" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28813" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28823" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28823" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- Paladin Only -->
+	<If Condition="Me.Class == WoWClass.Paladin" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28762" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28762" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28762" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28770" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28770" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28770" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Consecrated Letter" QuestId="3101" GiverName="Marshal McBride" GiverId="197" />
+  <CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" />
+  <PickUp QuestName="The Power of the Light" QuestId="26918" GiverName="Brother Sammuel" GiverId="925" />
+	<While Condition="!HasSpell(20154)" >
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>
+  <While Condition="HasQuest(26918) &amp;&amp; !IsQuestCompleted(26918)" >
+    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+    Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" />
+    <CustomBehavior File="InteractWith" QuestId="26918" MobId="44548" KeepTargetSelected="True" Range="30" WaitTime="500" X="-8946.368" Y="-146.042" Z="82.15112" />
+    <CustomBehavior QuestId="26919" File="Misc\RunLua" Lua="CastSpellByID(20154)" WaitTime="500" />
+  </While>
+		<!--<While Condition="!IsQuestCompleted(26918)" >
+			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+			Text="This class quest is impossible to do properly. He's too stupid. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+				<CustomBehavior File="CastSpellOn" QuestId="26918" SpellId="20271" MobId="44848" NumOfTimes="1" MinRange="3" Range="9" QuestCompleteRequirement="NotComplete" X="-8965.39" Y="-146.199" Z="81.5098" />
+		</While>-->
+  <CustomBehavior File="UserSettings" TrainNewSkills="False" /> <!-- Train OFF -->
+	<TurnIn QuestName="The Power of the Light" QuestId="26918" TurnInName="" TurnInId="925" />
+	<PickUp QuestName="Join the Battle!" QuestId="28785" GiverName="Brother Sammuel" GiverId="925" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28785" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28793" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28809" GiverName="Brother Paxton" GiverId="951" />
+	<While Condition="!IsQuestCompleted(28809)" >
+		<CustomBehavior File="InteractWith" QuestId="28809" MobId="50047" ObjectType="Npc" WaitTime="3000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28793" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28793" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28809" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28819" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28819" TurnInName="Marshal McBride" TurnInId="197" />
+
+	
+	</If>
+	
+	<!-- Rogue Only -->
+	<If Condition="Me.Class == WoWClass.Rogue" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28764" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28764" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28764" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28772" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28772" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28772" TurnInName="Marshal McBride" TurnInId="197" />	
+	<PickUp QuestName="Encrypted Letter" QuestId="3102" GiverName="Marshal McBride" GiverId="197" />
+	<TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <PickUp QuestName="The Deepest Cut" QuestId="26915" GiverName="" GiverId="915" />
+	<While Condition="!HasSpell(2098)" >
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>	
+	<While Condition="!IsQuestCompleted(26915)" >
+		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+		Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" />
+		<CustomBehavior File="CastSpellOn" SpellId="1752" MobId="44548" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
+		<CustomBehavior File="CastSpellOn" SpellId="2098" MobId="44548" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
+	</While>
+	<TurnIn QuestName="The Deepest Cut" QuestId="26915" TurnInName="" TurnInId="915" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28787" GiverName="Jorik Kerridan" GiverId="915" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28787" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28795" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28811" GiverName="Brother Paxton" GiverId="951" />
+	<While Condition="!IsQuestCompleted(28811)" >
+		<CustomBehavior File="InteractWith" QuestId="28811" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28795" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28795" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28811" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28821" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28821" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- Priest Only -->
+	<If Condition="Me.Class == WoWClass.Priest" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28763" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28763" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28763" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28771" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28771" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28771" TurnInName="Marshal McBride" TurnInId="197" />	
+	<PickUp QuestName="Hallowed Letter" QuestId="3103" GiverName="Marshal McBride" GiverId="197" />
+	<TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <PickUp QuestName="Healing the Wounded" QuestId="26919" GiverName="" GiverId="375" />
+	<While Condition="!HasSpell(2061)" >
+		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>
+    <While Condition="HasQuest(26919) &amp;&amp; !IsQuestCompleted(26919)" >
+      <CustomBehavior File="InteractWith" QuestId="26919" MobId="44564" WaitForNpcs="True" Range="15" WaitTime="500" X="-8849.5" Y="-190.071" Z="81.93785" />
+      <CustomBehavior QuestId="26919" File="Misc\RunLua" Lua="CastSpellByID(2061)" WaitTime="500" />
+    </While>
+	<!--<While Condition="!IsQuestCompleted(26919)" >
+		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+		Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+		<CustomBehavior File="CastSpellOn" SpellId="2061" MobId="44564" NumOfTimes="1" Range="30"  X="-8855.15" Y="-189.2598" Z="81.93628" />
+	</While>-->
+	<TurnIn QuestName="Healing the Wounded" QuestId="26919" TurnInName="" TurnInId="375" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28786" GiverName="Priestess Anetta" GiverId="375" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28786" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28794" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28810" GiverName="Brother Paxton" GiverId="951" />
+	<While Condition="!IsQuestCompleted(28810)" >
+		<CustomBehavior File="InteractWith" QuestId="28810" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28794" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28794" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28810" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28820" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28820" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- Mage Only -->
+	<If Condition="Me.Class == WoWClass.Mage" >
+	<PickUp QuestName="Beating Them Back!" QuestId="28757" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28757" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28757" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28769" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28769" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28769" TurnInName="Marshal McBride" TurnInId="197" />	
+	<PickUp QuestName="Glyphic Letter" QuestId="3104" GiverName="Marshal McBride" GiverId="197" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <TurnIn QuestName="Glyphic Letter" QuestId="3104" TurnInName="Khelden Bremen" TurnInId="198" />
+	<PickUp QuestName="Mastering the Arcane" QuestId="26916" GiverName="" GiverId="198" />
+	<While Condition="!HasSpell(5143)" >
+		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	</While>
+	<While Condition="!IsQuestCompleted(26916)" >
+			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+			Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+			<CustomBehavior File="CastSpellOn" SpellId="133" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+			<CustomBehavior File="CastSpellOn" SpellId="5143" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+	</While>
+	<TurnIn QuestName="Mastering the Arcane" QuestId="26916" TurnInName="" TurnInId="198" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28784" GiverName="Khelden Bremen" GiverId="198" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28784" TurnInName="Sergeant Willem" TurnInId="823" />
+	<PickUp QuestName="They Sent Assassins" QuestId="28792" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28808" GiverName="Brother Paxton" GiverId="951" />
+		<While Condition="!IsQuestCompleted(28808)" >
+			<CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+		</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28792" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28792" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28808" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28818" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28818" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- Warlock Only -->
+	<If Condition="Me.Class == WoWClass.Warlock" > <!-- Warlock no works leveling for hb 5999. It must work but I don't know at what level -->
+    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+    Text="This class has a bug. The character does not move. You had to do 10 levels by yourself and try again." Title="WARNING" /> 
+	<PickUp QuestName="Beating Them Back!" QuestId="28765" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Beating Them Back!" QuestId="28765" Type="KillMob" MobId="49871" KillCount="6" />
+	<TurnIn QuestName="Beating Them Back!" QuestId="28765" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Lions for Lambs" QuestId="28773" GiverName="Marshal McBride" GiverId="197" />
+		<Objective QuestName="Lions for Lambs" QuestId="28773" Type="KillMob" MobId="49874" KillCount="8" />
+	<TurnIn QuestName="Lions for Lambs" QuestId="28773" TurnInName="Marshal McBride" TurnInId="197" />	
+	<PickUp QuestName="Tainted Letter" QuestId="3105" GiverName="Marshal McBride" GiverId="197" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
+  <TurnIn QuestName="Tainted Letter" QuestId="3105" TurnInName="Drusilla La Salle" TurnInId="459" />
+	<PickUp QuestName="Immolation" QuestId="26914" GiverName="" GiverId="459" />
+		<While Condition="!HasSpell(348)" >
+			<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+      <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+		</While>
+		<While Condition="!IsQuestCompleted(26914)" >
+			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
+			Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
+			<CustomBehavior File="CastSpellOn" SpellId="348" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+		</While>
+	<TurnIn QuestName="Immolation" QuestId="26914" TurnInName="" TurnInId="459" />
+	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
+  <PickUp QuestName="Join the Battle!" QuestId="28788" GiverName="Drusilla La Salle" GiverId="459" />
+	<TurnIn QuestName="Join the Battle!" QuestId="28788" TurnInName="Sergeant Willem" TurnInId="823" />
+		<PickUp QuestName="They Sent Assassins" QuestId="28796" GiverName="Sergeant Willem" GiverId="823" />
+	<PickUp QuestName="Fear No Evil" QuestId="28812" GiverName="Brother Paxton" GiverId="951" />
+		<While Condition="!IsQuestCompleted(28812)" >
+			<CustomBehavior File="InteractWith" QuestId="28812" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+		</While>
+	<Objective QuestName="They Sent Assassins" QuestId="28796" Type="KillMob" MobId="50039" KillCount="8" />
+	<TurnIn QuestName="They Sent Assassins" QuestId="28796" TurnInName="Sergeant Willem" TurnInId="823" />
+	<TurnIn QuestName="Fear No Evil" QuestId="28812" TurnInName="Brother Paxton" TurnInId="951" />
+	<PickUp QuestName="The Rear is Clear" QuestId="28822" GiverName="Sergeant Willem" GiverId="823" />
+	<TurnIn QuestName="The Rear is Clear" QuestId="28822" TurnInName="Marshal McBride" TurnInId="197" />
+	</If>
+	
+	<!-- No class req-->
+	<PickUp QuestName="Blackrock Invasion" QuestId="26389" GiverName="Marshal McBride" GiverId="197" />
+	<PickUp QuestName="Extinguishing Hope" QuestId="26391" GiverId="9296" />
+    <While Condition="HasQuest(26391) &amp;&amp; !IsQuestCompleted(26391)">
+        <CustomBehavior File="UserSettings" PullDistance="10" />
+        <CustomBehavior File="UseItemOn" QuestId="26391" MobId="42940" ItemId="58362" NumOfTimes="8" WaitTime="3000" Range="10" CollectionDistance="100" X="-9063.322" Y="-277.0595" Z="73.64384" />
+        <CustomBehavior File="UserSettings" PullDistance="25" />
+    </While>
+	<Objective QuestName="Blackrock Invasion" QuestId="26389" Type="CollectItem" ItemId="58361" CollectCount="8" />
+	<TurnIn QuestName="Blackrock Invasion" QuestId="26389" TurnInName="Marshal McBride" TurnInId="197" />
+	<TurnIn QuestName="Extinguishing Hope" QuestId="26391" TurnInName="Milly Osworth" TurnInId="9296" />
+	<PickUp QuestName="Ending the Invasion!" QuestId="26390" GiverName="Marshal McBride" GiverId="197" />
+	<Objective QuestName="Ending the Invasion!" QuestId="26390" Type="KillMob" MobId="42938" KillCount="1" />
+	<If Condition="HasQuest(26390)">
+    <CustomBehavior File="Message" Text="Go home" LogColor="Yellow" />
+    <CustomBehavior File="Misc\RunLua" Lua="UseItemByName(6948)" WaitTime="1000" /><!-- UseHearthstone -->
+    <CustomBehavior File="WaitTimer" WaitTime="11000" />
+  </If>
+  <TurnIn QuestName="Ending the Invasion!" QuestId="26390" TurnInName="Marshal McBride" TurnInId="197" />
+	<PickUp QuestName="Report to Goldshire" QuestId="54" GiverName="Marshal McBride" GiverId="197" />
+	<PickUp QuestName="Rest and Relaxation" QuestId="2158" GiverName="Falkhaan Isenstrider" GiverId="6774" />
+	<TurnIn QuestName="Report to Goldshire" QuestId="54" TurnInName="Marshal Dughan" TurnInId="240" />
+	<TurnIn QuestName="Rest and Relaxation" QuestId="2158" TurnInName="Innkeeper Farley" TurnInId="295" />
+        <!--///////////////////////////////////////////////////////////////
+                              END QUEST
+    ///////////////////////////////////////////////////////////////-->
+	<SetGrindArea> 
+			<GrindArea> 
+				<Factions>7</Factions>
+				<Hotspots>      
+					<Hotspot X="-8782.871" Y="-107.3422" Z="83.35699" />
+					<Hotspot X="-8720.972" Y="-88.16251" Z="90.40733" />
+					<Hotspot X="-8724.425" Y="-137.0334" Z="86.89613" />
+					<Hotspot X="-8736.088" Y="-199.7948" Z="87.86673" />
+					<Hotspot X="-8771.962" Y="-259.924" Z="80.28711" />
+					<Hotspot X="-8805.207" Y="-232.5131" Z="82.34293" />
+					<Hotspot X="-8807.99" Y="-198.0297" Z="82.20427" />
+					<Hotspot X="-8774.711" Y="-160.9021" Z="81.87766" />
+					<Hotspot X="-8768.478" Y="-106.164" Z="85.97653" />
+				</Hotspots>
+			</GrindArea> 
+		 </SetGrindArea> 
+	<GrindTo Level="5" />
+	<CustomBehavior File="Message" Text="Human Starter Complete" LogColor="Orange" />
+	<If Condition="Me.ZoneId == 12">
+         <!--   SW  -->
+		<CustomBehavior File="Message" Text="Running into SW Tram portal" LogColor="Cornflowerblue" />
+		<RunTo X="-8358.225" Y="517.1628" Z="84.409" />
+		<CustomBehavior File="MyCTM" X="-8354.0085" Y="510.7631" Z="84.41" />
+		<CustomBehavior File="WaitTimer" WaitTime="4000" GoalText="Waiting for port {TimeRemaining}" />
+    </If>
+	<If Condition="Me.ZoneId == 2257">
+    <If Condition="Me.Y &gt; 2400">
+        <!-- SW side -->
+      <CustomBehavior File="Message" Text="Riding Tram from SW to IF" LogColor="Cornflowerblue" />
+      <RunTo X="-36.48126" Y="2511.517" Z="-4.170321" />
+		  <CustomBehavior File="UseTransport" TransportId="176083" WaitAtX="-39.54843" WaitAtY="2511.885" WaitAtZ="-4.091061" GetOffX="-38.81104" GetOffY="30.26185" GetOffZ="-3.998763" TransportStartX="-45.4007" TransportStartY="2512.15" TransportStartZ="6.9886" TransportEndX="-45.40048" TransportEndY="30.38159" TransportEndZ="5.961113" />
+      </If>
+	</If>   <!--  Deeprun Tram -->
+  <If Condition="Me.ZoneId == 2257">
+      <!--IF side -->
+    <CustomBehavior File="Message" Text="Running into portal from Deeprun Tram (SW Side) to IF" LogColor="Cornflowerblue" />
+    <RunTo X="71.22018" Y="10.22631" Z="-4.29664" />
+		<CustomBehavior File="MyCTM" X="73.32018" Y="10.22631" Z="-4.29664" />
+      <!-- Get on at SW, off at IF -->
+	</If>
+
+	<CustomBehavior File="LoadProfile" ProfileName="[A]5-11 Dun Morogh" />
+
+</QuestOrder>
+</HBProfile>
