@@ -289,8 +289,7 @@
 			<CustomBehavior CollectionDistance="300" File="InteractWith" MobId="195074" NumOfTimes="1" ObjectType="Gameobject" QuestId="28715" WaitTime="500" X="10271.99" Y="996.001" Z="1342.753"/>
 		</While>
 		<TurnIn QuestId="28715" QuestName="Demonic Thieves" TurnInId="2077" TurnInName="Melithar Staghelm"/>
-		<CustomBehavior File="UserSettings" TrainNewSkills="True"/>
-		<!-- Train ON -->
+		<CustomBehavior File="UserSettings" TrainNewSkills="True"/><!-- Train ON -->
 		<!-- Class Quests -->
 		<!-- Warrior -->
 		<If Condition="Me.Class == WoWClass.Warrior">
