@@ -27,9 +27,13 @@
 		<Blackspot Radius="35.94508" X="10770.1" Y="2185.813" Z="1329.456"/>
 		<Blackspot Radius="20.25414" X="-9151.938" Y="88.74734" Z="76.00366"/>
 		<!-- Defiant in Elwynn -->
-		<Blackspot Radius="5" X="10890.06" Y="875.1753" Z="1325.438"/>
+		<Blackspot Radius="3" X="10890.06" Y="875.1753" Z="1325.438"/>
 		<Blackspot Radius="3" X="10513.28" Y="832.9531" Z="1353"/>
 		<Blackspot Radius="0.6239157" X="10514.46" Y="832.8709" Z="1353.183"/>
+		<Blackspot X="10427.24" Y="874.5126" Z="1319.047" Radius="4.887045" />
+		<Blackspot Radius="1" X="10426.36" Y="875.267" Z="1318.93" />
+		<Blackspot Radius="1" X="10513.03" Y="832.6969" Z="1353.025" />
+
 	</Blackspots>
 	<Mailboxes>
 		<Mailbox X="10391.03" Y="748.014" Z="1320.292"/>
@@ -422,6 +426,9 @@
 		<TurnIn QuestId="28729" QuestName="Teldrassil: Crown of Azeroth" TurnInId="49479" TurnInName="Dentaria Silverglade"/>
 		<!-- Precious Waters -->
 		<PickUp GiverId="49479" GiverName="Dentaria Silverglade" QuestId="28730" QuestName="Precious Waters"/>
+		<RunTo QuestId="49479" X="10443.47" Y="882.8818" Z="1318.206" />
+		<RunTo QuestId="49479" X="10426.95" Y="896.7598" Z="1318.501" />
+		<RunTo QuestId="49479" X="10416.62" Y="893.3249" Z="1319.139" />
 		<TurnIn QuestId="28730" QuestName="Precious Waters" TurnInId="3514" TurnInName="Tenaron Stormgrip"/>
 		<!--Teldrassil: Passing Awareness/Dolanaar Delivery -->
 		<PickUp GiverId="3514" GiverName="Tenaron Stormgrip" QuestId="28731" QuestName="Teldrassil: Passing Awareness"/>
