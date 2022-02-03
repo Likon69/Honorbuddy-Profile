@@ -557,7 +557,7 @@
   <PickUp QuestName="The Hunter's Path" QuestId="26917" GiverName="Ashley Blank" GiverId="43278" />
   <While Condition="!HasSpell(56641)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-	  <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+	  <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
 	<While Condition="!IsQuestCompleted(26917)" >
 		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
@@ -594,7 +594,7 @@
   <PickUp QuestName="Charging into Battle" QuestId="26913" GiverId="911" />
 	<While Condition="!HasSpell(100)" >
 		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
 	<While Condition="!IsQuestCompleted(26913)" >
 	 <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
@@ -632,7 +632,7 @@
   <PickUp QuestName="The Power of the Light" QuestId="26918" GiverName="Brother Sammuel" GiverId="925" />
 	<While Condition="!HasSpell(20154)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
   <While Condition="HasQuest(26918) &amp;&amp; !IsQuestCompleted(26918)" >
     <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
@@ -677,7 +677,7 @@
   <PickUp QuestName="The Deepest Cut" QuestId="26915" GiverName="" GiverId="915" />
 	<While Condition="!HasSpell(2098)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>	
 	<While Condition="!IsQuestCompleted(26915)" >
 		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
@@ -715,7 +715,7 @@
   <PickUp QuestName="Healing the Wounded" QuestId="26919" GiverName="" GiverId="375" />
 	<While Condition="!HasSpell(2061)" >
 		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
     <While Condition="HasQuest(26919) &amp;&amp; !IsQuestCompleted(26919)" >
       <CustomBehavior File="InteractWith" QuestId="26919" MobId="44564" WaitForNpcs="True" Range="15" WaitTime="500" X="-8849.5" Y="-190.071" Z="81.93785" />
@@ -756,7 +756,7 @@
 	<PickUp QuestName="Mastering the Arcane" QuestId="26916" GiverName="" GiverId="198" />
 	<While Condition="!HasSpell(5143)" >
 		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
 	<While Condition="!IsQuestCompleted(26916)" >
 			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
@@ -781,7 +781,7 @@
 	</If>
 	
 	<!-- Warlock Only -->
-	<If Condition="Me.Class == WoWClass.Warlock" > <!-- Warlock no works leveling for hb 5999. It must work but I don't know at what level -->
+	<If Condition="Me.Class == WoWClass.Warlock" >
     <If Condition="!HasQuest(28765) &amp;&amp; !IsQuestCompleted(28765)" >
     <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue"
     Text="This class has a bug. The character does not move for singular (is rotation CR). Use Zerfall, put hims in Honorbuddy/Custom Classe/Zerfall." Title="WARNING" />
