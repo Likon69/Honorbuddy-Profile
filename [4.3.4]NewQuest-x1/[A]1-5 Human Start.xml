@@ -52,6 +52,7 @@
 			<Blackspot X="-1469.433" Y="1411.747" Z="35.55615" Radius="1.97401" />
 			<Blackspot X="-8906.482" Y="-129.4137" Z="81.03415" Radius="3" />
       <Blackspot X="-9465.926" Y="34.53046" Z="56.96679" Radius="0.4605662" />
+      <Blackspot X="-9465.931" Y="34.58288" Z="56.96496" Radius="0.5426555" />
 	</Blackspots>
 	
 	<Mailboxes>
@@ -530,7 +531,7 @@
   
 <QuestOrder>
     <!--Level load-->
-  <If Condition="Me.Level &gt;= 5 &amp;&amp; Me.Level &lt; 11" >
+  <If Condition="Me.Level &gt;= 5 &amp;&amp; Me.Level &lt; 11 &amp;&amp; Me.ZoneId == 1537 &amp;&amp; Me.ZoneId == 1" >
 	 <CustomBehavior File="LoadProfile" ProfileName="[A]5-11 Dun Morogh" />
   </If>
 	<CustomBehavior File="Message" Text="Compiling Elwynn Forest Quests" LogColor="Green" />	  
@@ -781,8 +782,10 @@
 	
 	<!-- Warlock Only -->
 	<If Condition="Me.Class == WoWClass.Warlock" > <!-- Warlock no works leveling for hb 5999. It must work but I don't know at what level -->
-    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-    Text="This class has a bug. The character does not move. You had to do 10 levels by yourself and try again." Title="WARNING" /> 
+    <If Condition="!HasQuest(28765) &amp;&amp; !IsQuestCompleted(28765)" >
+    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue"
+    Text="This class has a bug. The character does not move for singular (is rotation CR). Use Zerfall, put hims in Honorbuddy/Custom Classe/Zerfall." Title="WARNING" />
+  </If> 
 	<PickUp QuestName="Beating Them Back!" QuestId="28765" GiverName="Marshal McBride" GiverId="197" />
 		<Objective QuestName="Beating Them Back!" QuestId="28765" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28765" TurnInName="Marshal McBride" TurnInId="197" />
@@ -795,7 +798,7 @@
 	<PickUp QuestName="Immolation" QuestId="26914" GiverName="" GiverId="459" />
 		<While Condition="!HasSpell(348)" >
 			<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-      <CustomBehavior File="ForceSetVendor" DoSell="True" VendorType="Train" />
+      <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 		</While>
 		<While Condition="!IsQuestCompleted(26914)" >
 			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
