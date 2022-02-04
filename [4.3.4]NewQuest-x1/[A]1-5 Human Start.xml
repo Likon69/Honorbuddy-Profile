@@ -553,7 +553,6 @@
 	<TurnIn QuestName="Lions for Lambs" QuestId="28759" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Etched Letter" QuestId="26910" GiverName="Marshal McBride" GiverId="197" />
 	<TurnIn QuestName="Etched Letter" QuestId="26910" TurnInName="Ashley Blank" TurnInId="43278" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <PickUp QuestName="The Hunter's Path" QuestId="26917" GiverName="Ashley Blank" GiverId="43278" />
   <While Condition="!HasSpell(56641)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
@@ -565,7 +564,6 @@
 		<CustomBehavior File="CastSpellOn" QuestId="26917" SpellId="56641" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
   <TurnIn QuestName="The Hunter's Path" QuestId="26917" TurnInName="Ashley Blank" TurnInId="43278" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28780" GiverName="Ashley Blank" GiverId="43278" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28780" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28791" GiverName="Sergeant Willem" GiverId="823" />
@@ -590,7 +588,6 @@
 	<TurnIn QuestName="Lions for Lambs" QuestId="28774" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Simple Letter" QuestId="3100" GiverName="Marshal McBride" GiverId="197" />
 	<TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Charging into Battle" QuestId="26913" GiverId="911" />
 	<While Condition="!HasSpell(100)" >
 		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
@@ -603,7 +600,6 @@
 	 <CustomBehavior File="CastSpellOn" QuestId="26913" SpellId="100" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
 	<TurnIn QuestName="Charging into Battle" QuestId="26913" TurnInId="911" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28789" GiverName="Llane Beshere" GiverId="911" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28789" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28797" GiverName="Sergeant Willem" GiverId="823" />
@@ -627,7 +623,6 @@
 		<Objective QuestName="Lions for Lambs" QuestId="28770" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28770" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Consecrated Letter" QuestId="3101" GiverName="Marshal McBride" GiverId="197" />
-  <CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" />
   <PickUp QuestName="The Power of the Light" QuestId="26918" GiverName="Brother Sammuel" GiverId="925" />
 	<While Condition="!HasSpell(20154)" >
@@ -645,7 +640,6 @@
 			Text="This class quest is impossible to do properly. He's too stupid. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
 				<CustomBehavior File="CastSpellOn" QuestId="26918" SpellId="20271" MobId="44848" NumOfTimes="1" MinRange="3" Range="9" QuestCompleteRequirement="NotComplete" X="-8965.39" Y="-146.199" Z="81.5098" />
 		</While>-->
-  <CustomBehavior File="UserSettings" TrainNewSkills="False" /> <!-- Train OFF -->
 	<TurnIn QuestName="The Power of the Light" QuestId="26918" TurnInName="" TurnInId="925" />
 	<PickUp QuestName="Join the Battle!" QuestId="28785" GiverName="Brother Sammuel" GiverId="925" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28785" TurnInName="Sergeant Willem" TurnInId="823" />
@@ -673,7 +667,6 @@
 	<TurnIn QuestName="Lions for Lambs" QuestId="28772" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Encrypted Letter" QuestId="3102" GiverName="Marshal McBride" GiverId="197" />
 	<TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <PickUp QuestName="The Deepest Cut" QuestId="26915" GiverName="" GiverId="915" />
 	<While Condition="!HasSpell(2098)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
@@ -686,7 +679,6 @@
 		<CustomBehavior File="CastSpellOn" SpellId="2098" MobId="44548" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
 	</While>
 	<TurnIn QuestName="The Deepest Cut" QuestId="26915" TurnInName="" TurnInId="915" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28787" GiverName="Jorik Kerridan" GiverId="915" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28787" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28795" GiverName="Sergeant Willem" GiverId="823" />
@@ -711,7 +703,6 @@
 	<TurnIn QuestName="Lions for Lambs" QuestId="28771" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Hallowed Letter" QuestId="3103" GiverName="Marshal McBride" GiverId="197" />
 	<TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <PickUp QuestName="Healing the Wounded" QuestId="26919" GiverName="" GiverId="375" />
 	<While Condition="!HasSpell(2061)" >
 		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
@@ -727,7 +718,6 @@
 		<CustomBehavior File="CastSpellOn" SpellId="2061" MobId="44564" NumOfTimes="1" Range="30"  X="-8855.15" Y="-189.2598" Z="81.93628" />
 	</While>-->
 	<TurnIn QuestName="Healing the Wounded" QuestId="26919" TurnInName="" TurnInId="375" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28786" GiverName="Priestess Anetta" GiverId="375" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28786" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28794" GiverName="Sergeant Willem" GiverId="823" />
@@ -751,7 +741,6 @@
 		<Objective QuestName="Lions for Lambs" QuestId="28769" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28769" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Glyphic Letter" QuestId="3104" GiverName="Marshal McBride" GiverId="197" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <TurnIn QuestName="Glyphic Letter" QuestId="3104" TurnInName="Khelden Bremen" TurnInId="198" />
 	<PickUp QuestName="Mastering the Arcane" QuestId="26916" GiverName="" GiverId="198" />
 	<While Condition="!HasSpell(5143)" >
@@ -765,7 +754,6 @@
 			<CustomBehavior File="CastSpellOn" SpellId="5143" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
 	<TurnIn QuestName="Mastering the Arcane" QuestId="26916" TurnInName="" TurnInId="198" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28784" GiverName="Khelden Bremen" GiverId="198" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28784" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28792" GiverName="Sergeant Willem" GiverId="823" />
@@ -793,7 +781,6 @@
 		<Objective QuestName="Lions for Lambs" QuestId="28773" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28773" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Tainted Letter" QuestId="3105" GiverName="Marshal McBride" GiverId="197" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="True" /><!-- Train ON -->
   <TurnIn QuestName="Tainted Letter" QuestId="3105" TurnInName="Drusilla La Salle" TurnInId="459" />
 	<PickUp QuestName="Immolation" QuestId="26914" GiverName="" GiverId="459" />
 		<While Condition="!HasSpell(348)" >
@@ -806,7 +793,6 @@
 			<CustomBehavior File="CastSpellOn" SpellId="348" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 		</While>
 	<TurnIn QuestName="Immolation" QuestId="26914" TurnInName="" TurnInId="459" />
-	<CustomBehavior File="UserSettings" TrainNewSkills="False" /><!-- Train OFF -->
   <PickUp QuestName="Join the Battle!" QuestId="28788" GiverName="Drusilla La Salle" GiverId="459" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28788" TurnInName="Sergeant Willem" TurnInId="823" />
 		<PickUp QuestName="They Sent Assassins" QuestId="28796" GiverName="Sergeant Willem" GiverId="823" />

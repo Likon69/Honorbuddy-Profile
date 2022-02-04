@@ -1,0 +1,504 @@
+<HBProfile>
+
+<Name>Dwarf Starter</Name>
+<MinLevel>1</MinLevel>
+<MaxLevel>15</MaxLevel>
+
+<MinDurability>0.2</MinDurability>
+<MinFreeBagSlots>2</MinFreeBagSlots>
+
+<MailGrey>False</MailGrey>
+<MailWhite>True</MailWhite>
+<MailGreen>True</MailGreen>
+<MailBlue>True</MailBlue>
+<MailPurple>True</MailPurple>
+
+<SellGrey>True</SellGrey>
+<SellWhite>True</SellWhite>
+<SellGreen>True</SellGreen>
+<SellBlue>False</SellBlue>
+<SellPurple>False</SellPurple>
+
+<AvoidMobs>
+	<Mob Name="Tunnel Rat Lackey" Entry="44264"  />
+	<Mob Name="Bluegill Representative" Entry="44263" />
+	<Mob Name="Mosshide Representative" Entry="44262" />
+	<Mob Name="Cosmetic Mottled Raptor" Entry="40495" />
+	<Mob Name="Stickbone Berserker" Entry="44329" />
+	<Mob Name="Crazed Leper Gnome" Entry="46391" />
+	<Mob Name="Living Contamination" Entry="43089" />
+	<Mob Name="Araj the Summoner" Entry="1852" />
+	<Mob Name="Koltira Deathweaver" Entry="44452" />
+	<Mob Name="Senara Swiftsilver" Entry="48123" />
+	<Mob Name="Aoren Sunglow" Entry="46758" />
+	<Mob Name="Selara" Entry="44408"  />
+	<Mob Name="Ramah Goldenray" Entry="48122" />
+	<Mob Name="Quartermaster Kaoshin" Entry="48085" />
+	<Mob Name ="Stonard Grunt" Entry="866" />
+	<Mob Name ="Bonepicker Felfeeder" Entry="5983" />
+	<Mob Name="Horrid Abomination" Entry="36231" />
+	<Mob Name="Koroth the Hillbreaker" Entry="36528" />
+	<Mob Name="Koroth the Hillbreaker" Entry="36294" />
+	<Mob Name="Raider's Training Dummy" Entry="31146" />
+	<Mob Name="Crazed Leper Gnome" Entry="46363" />
+	<Mob Name="Crazed Leper Gnome" Entry="46391" />
+	<Mob Name="Living Contamination" Entry="43089" />
+	<Mob Name="Crushcog Sentry-Bot" Entry="42291" />
+</AvoidMobs>
+
+<Blackspots>
+	<Blackspot X="-6140.351" Y="433.117" Z="400.2131" Radius="5.232696" /> <!-- Keg 1 -->
+	<Blackspot X="-6148.939" Y="595.9611" Z="387.1931" Radius="4.441553" /> <!-- Keg 2 -->
+	<Blackspot X="-6142.246" Y="321.3149" Z="399.804" Radius="2.269561" /> <!-- Keg 3 -->
+	<Blackspot X="-6168.142" Y="377.0621" Z="398.941" Radius="1.976181" /> <!-- Coldridge Mailbox -->
+	<Blackspot X="-9151.938" Y="88.74734" Z="76.00366" Radius="20.25414" /> <!-- Defiant in Elwynn -->
+</Blackspots>
+
+<Mailboxes>
+	<!-- Coldridge Mailbox -->
+	<Mailbox X="-6169.81" Y="376.9556" Z="398.8244" />
+	<!-- Kharanos Mailbox -->
+	<Mailbox X="-5603.603" Y="-512.9031" Z="401.6768" />
+	<!-- Thelsamar Mailbox -->
+	<Mailbox X="-5364.78" Y="-2953.748" Z="323.8507" />
+	<!-- Menethil Harbor Mailbox -->
+	<Mailbox X="-3792.943" Y="-838.8805" Z="-0.05157017" />
+	<!-- Wildhammer Keep Mailbox -->
+	<Mailbox X="293.83" Y="-2116.429" Z="121.8381" />
+	<!-- Stormfeather Outpost Mailbox -->
+	<Mailbox X="303.7507" Y="-4113.429" Z="118.3129" />
+	<!-- Chillwind Camp Mailbox -->
+	<Mailbox X="947.6384" Y="-1460.586" Z="62.53422" />
+	<!-- Lights hope Mailbox  -->
+	<Mailbox X="2289.696" Y="-5322.46" Z="89.91563" />
+	<!-- Fuselight-by-the-Sea -->
+	<Mailbox X="-6617.911" Y="-4690.531" Z="8.643024" />
+</Mailboxes>
+
+<Vendors>
+    <!-- Coldridge Valley -->
+    <Vendor Name="Thorgas Grimson" Entry="895" Type="Train" TrainClass="Hunter" X="-6091.788" Y="365.1413" Z="395.5414" />
+    <Vendor Name="Bromos Grummner" Entry="926" Type="Train" TrainClass="Paladin" X="-6120.679" Y="382.0895" Z="395.5435" />
+    <Vendor Name="Solm Hargrin" Entry="916" Type="Train" TrainClass="Rogue" X="-6093.748" Y="404.9183" Z="395.5375" />
+    <Vendor Name="Thran Khorman" Entry="912" Type="Train" TrainClass="Warrior" X="-6084.768" Y="382.1413" Z="395.5432" />
+    <Vendor Name="Saripal Smolderbrew" Entry="43455" Type="Train" TrainClass="Warlock" X="-6074.89" Y="388.547" Z="393.6033" />
+    <Vendor Name="Teegli Merrowith" Entry="37121" Type="Train" TrainClass="Mage" X="-6056.094" Y="388.1749" Z="392.7616" />
+    <Vendor Name="Teo Hammerstorm" Entry="37115" Type="Train" TrainClass="Shaman" X="-6051.206" Y="387.3906" Z="398.8733" />
+    <Vendor Name="Branstock Khalder" Entry="837" Type="Train" TrainClass="Priest" X="-6056.739" Y="393.548" Z="392.7603" />
+    <Vendor Name="Adlin Pridedrift" Entry="829" Type="Food" X="-6225.237" Y="320.3721" Z="383.1173" />
+    <Vendor Name="Durnan Furcutter" Entry="836" Type="Repair" X="-6056.377" Y="385.2125" Z="392.7625" />
+    <Vendor Name="Rybrad Coldbank" Entry="945" Type="Repair" X="-6101.101" Y="390.5695" Z="395.5436" />
+    <Vendor Name="Felix Whindlebolt" Entry="8416" Type="Food" X="-6370.058" Y="576.2" Z="385.7998" />
+
+	<!-- Coldridge Valley -->
+	<Vendor Name="Adlin Pridedrift" Entry="829" Type="Food" X="-6225.237" Y="320.3721" Z="383.1173" />
+	<Vendor Name="Durnan Furcutter" Entry="836" Type="Repair" X="-6056.377" Y="385.2125" Z="392.7625" />
+	<Vendor Name="Rybrad Coldbank" Entry="945" Type="Repair" X="-6101.101" Y="390.5695" Z="395.5436" />
+	<Vendor Name="Felix Whindlebolt" Entry="8416" Type="Food" X="-6370.058" Y="576.2" Z="385.7998" />
+</Vendors>
+
+<!-- Quest Overrides -->
+
+<Quest Id="24469" Name="Hold the Line">
+	<Objective Type="KillMob" MobId="34511" KillCount="10">
+		<Hotspots>
+			<Hotspot X="-1919.626" Y="2346.02" Z="34.89392" />
+			<Hotspot X="-1948.649" Y="2293.441" Z="37.16598" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24469" Name="Hold the Line!">
+  <Objective Type="KillMob" MobId="37070" KillCount="6">
+    <Hotspots>
+      <Hotspot X="-6239.64" Y="321.6249" Z="382.5659" />
+      <Hotspot X="-6278.337" Y="311.009" Z="376.4891" />
+      <Hotspot X="-6298.02" Y="346.0489" Z="376.938" />
+      <Hotspot X="-6292.806" Y="385.671" Z="381.2578" />
+      <Hotspot X="-6252.407" Y="385.8141" Z="383.1744" />
+      <Hotspot X="-6241.195" Y="347.1799" Z="383.7345" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24470" Name="Give 'em What-For">
+  <Objective Type="KillMob" MobId="37073" KillCount="3">
+	  <Hotspots>
+      <Hotspot X="-6317.897" Y="326.7712" Z="377.9311" />
+      <Hotspot X="-6319.859" Y="286.86" Z="380.0677" />
+      <Hotspot X="-6347.023" Y="316.5906" Z="379.9317" />
+      <Hotspot X="-6346.252" Y="356.6069" Z="378.3806" />
+      <Hotspot X="-6345.467" Y="397.3953" Z="377.5842" />
+      <Hotspot X="-6322.703" Y="363.9226" Z="377.3817" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24474" Name="First Things First: We're Gonna Need Some Beer">
+	<Objective Type="CollectItem" ItemId="49746" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Keg of Gnomenbrau" Id="201611" />
+		</CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6141.967" Y="321.3142" Z="399.2259" />
+    </Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="49744" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Keg of Stormhammer Stout" Id="201610" />
+		</CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6144.583" Y="430.062" Z="399.8394" />
+    </Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="49745" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Keg of Theramore Pale Ale" Id="201609" />
+		</CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6152.083" Y="594.7087" Z="386.5111" />
+    </Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24477" Name="Dwarven Artifacts">
+	<Objective Type="CollectItem" ItemId="49749" CollectCount="5">
+		<CollectFrom>
+      <GameObject Name="Forgotten Dwarven Artifact" Id="201608" />
+		</CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6175.845" Y="372.5236" Z="398.6576" />
+      <Hotspot X="-6176.642" Y="332.4375" Z="401.7223" />
+      <Hotspot X="-6167.649" Y="294.2271" Z="391.5193" />
+      <Hotspot X="-6142.13" Y="262.6381" Z="393.1563" />
+      <Hotspot X="-6123.727" Y="227.9182" Z="404.1269" />
+      <Hotspot X="-6112.369" Y="266.8199" Z="404.8266" />
+      <Hotspot X="-6126.49" Y="304.1354" Z="409.4126" />
+      <Hotspot X="-6147.394" Y="336.9638" Z="399.6635" />
+      <Hotspot X="-6167.765" Y="372.1412" Z="399.5432" />
+      <Hotspot X="-6161.241" Y="411.7692" Z="400.4225" />
+      <Hotspot X="-6134.25" Y="441.3902" Z="399.6207" />
+      <Hotspot X="-6122.137" Y="479.8671" Z="401.0831" />
+      <Hotspot X="-6131.186" Y="518.8225" Z="397.4324" />
+      <Hotspot X="-6151.25" Y="552.9724" Z="389.7526" />
+      <Hotspot X="-6153.948" Y="593.3017" Z="386.1125" />
+      <Hotspot X="-6152.042" Y="634.0151" Z="386.2839" />
+      <Hotspot X="-6170.466" Y="552.9747" Z="386.2866" />
+      <Hotspot X="-6177.212" Y="513.3623" Z="386.5074" />
+      <Hotspot X="-6196.769" Y="477.7597" Z="387.3257" />
+      <Hotspot X="-6198.78" Y="437.8083" Z="387.1764" />
+      <Hotspot X="-6193.552" Y="398.1458" Z="391.81" />
+    </Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24486" Name="Make Hay While the Sun Shines">
+	<Objective Type="CollectItem" ItemId="49751" CollectCount="5">
+		<CollectFrom>
+      <Mob Id="37105" Name="Rockjaw Scavenger" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6236.779" Y="460.1556" Z="386.5454" />
+      <Hotspot X="-6276.911" Y="460.5069" Z="386.0664" />
+      <Hotspot X="-6285.22" Y="499.7776" Z="386.3893" />
+      <Hotspot X="-6282.201" Y="539.6897" Z="386.4896" />
+      <Hotspot X="-6241.799" Y="539.6537" Z="386.1535" />
+      <Hotspot X="-6229.266" Y="501.2055" Z="386.1112" />
+      <Hotspot X="-6233.71" Y="461.272" Z="386.4712" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24475" Name="All the Other Stuff">
+	<Objective Type="CollectItem" ItemId="49748" CollectCount="4">
+		<CollectFrom>
+      <Mob Id="704" Name="Ragged Timber Wolf" />
+      <Mob Id="705" Name="Ragged Young Wolf" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6196.872" Y="478.3631" Z="387.289" />
+      <Hotspot X="-6178.821" Y="514.1615" Z="386.3297" />
+      <Hotspot X="-6149.7" Y="542.0528" Z="389.4697" />
+      <Hotspot X="-6177.611" Y="571.0853" Z="384.6464" />
+      <Hotspot X="-6201.907" Y="602.731" Z="390.1045" />
+      <Hotspot X="-6218.158" Y="639.0964" Z="397.0201" />
+      <Hotspot X="-6227.975" Y="676.3641" Z="385.3164" />
+      <Hotspot X="-6261.789" Y="654.3708" Z="385.463" />
+      <Hotspot X="-6267.527" Y="614.7449" Z="386.8669" />
+      <Hotspot X="-6273.361" Y="574.4531" Z="386.7285" />
+      <Hotspot X="-6301.877" Y="545.7466" Z="386.5464" />
+      <Hotspot X="-6328.053" Y="514.9305" Z="386.5231" />
+      <Hotspot X="-6366.83" Y="503.2515" Z="382.7307" />
+      <Hotspot X="-6383.935" Y="467.0617" Z="378.0984" />
+      <Hotspot X="-6390.305" Y="427.4679" Z="378.0946" />
+      <Hotspot X="-6377.323" Y="388.7035" Z="380.486" />
+      <Hotspot X="-6337.926" Y="395.8864" Z="378.2613" />
+      <Hotspot X="-6317.179" Y="430.8706" Z="381.231" />
+      <Hotspot X="-6317.923" Y="470.9886" Z="384.101" />
+      <Hotspot X="-6295.145" Y="504.5752" Z="387.4557" />
+      <Hotspot X="-6272.401" Y="537.5877" Z="386.1245" />
+      <Hotspot X="-6244.396" Y="567.0695" Z="387.2393" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="49747" CollectCount="3">
+		<CollectFrom>
+      <Mob Id="708" Name="Small Crag Boar" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6155.959" Y="578.8283" Z="385.9621" />
+      <Hotspot X="-6168.738" Y="616.8975" Z="385.39" />
+      <Hotspot X="-6193.916" Y="648.1166" Z="385.2001" />
+      <Hotspot X="-6219.368" Y="679.6935" Z="384.9532" />
+      <Hotspot X="-6251.767" Y="703.3575" Z="386.2433" />
+      <Hotspot X="-6291.549" Y="698.0549" Z="384.6894" />
+      <Hotspot X="-6328.661" Y="682.3475" Z="384.7651" />
+      <Hotspot X="-6365.101" Y="664.7599" Z="386.7983" />
+      <Hotspot X="-6395.354" Y="637.9539" Z="386.4824" />
+      <Hotspot X="-6400.595" Y="597.7765" Z="386.5949" />
+      <Hotspot X="-6386.292" Y="560.3297" Z="385.562" />
+      <Hotspot X="-6386.368" Y="520.1545" Z="384.2371" />
+      <Hotspot X="-6391.962" Y="480.1292" Z="380.2155" />
+      <Hotspot X="-6384.667" Y="440.7025" Z="378.1806" />
+      <Hotspot X="-6386.331" Y="400.1811" Z="378.9991" />
+      <Hotspot X="-6373.904" Y="362.2455" Z="385.8314" />
+      <Hotspot X="-6349.215" Y="330.5101" Z="379.5908" />
+      <Hotspot X="-6311.369" Y="343.458" Z="376.526" />
+      <Hotspot X="-6285.458" Y="374.5345" Z="381.6319" />
+      <Hotspot X="-6260.909" Y="406.1389" Z="383.8151" />
+      <Hotspot X="-6230.069" Y="432.7343" Z="386.962" />
+      <Hotspot X="-6202.466" Y="462.5126" Z="388.1611" />
+      <Hotspot X="-6183.631" Y="497.8862" Z="385.3472" />
+      <Hotspot X="-6167.092" Y="534.3588" Z="386.36" />
+      <Hotspot X="-6185.14" Y="570.4428" Z="385.3608" />
+      <Hotspot X="-6215.825" Y="596.0002" Z="389.7638" />
+      <Hotspot X="-6254.731" Y="584.4943" Z="388.2012" />
+      <Hotspot X="-6282.528" Y="555.3251" Z="387.7996" />
+      <Hotspot X="-6300.053" Y="518.7352" Z="388.0349" />
+      <Hotspot X="-6321.198" Y="484.6699" Z="384.096" />
+      <Hotspot X="-6334.989" Y="447.0354" Z="379.8083" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="3361" Name="A Refugee's Quandary">
+	<Objective Type="CollectItem" ItemId="10438" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Felix's Box" Id="148499" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6374.805" Y="773.7039" Z="386.2128" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="16313" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Felix's Chest" Id="178084" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6503.895" Y="680.3673" Z="387.2739" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="16314" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Felix's Bucket of Bolts" Id="178085" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6480.008" Y="505.2559" Z="385.9881" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="182" Name="The Troll Menace">
+  <Objective Type="KillMob" MobId="706" KillCount="10">
+	  <Hotspots>
+      <Hotspot X="-6485.471" Y="506.4422" Z="386.0479" />
+      <Hotspot X="-6454.542" Y="480.6978" Z="385.0648" />
+      <Hotspot X="-6424.912" Y="507.9808" Z="383.528" />
+      <Hotspot X="-6428.303" Y="547.8853" Z="385.8864" />
+      <Hotspot X="-6467.182" Y="558.6492" Z="386.017" />
+      <Hotspot X="-6490.8" Y="590.8594" Z="393.2307" />
+      <Hotspot X="-6498.881" Y="630.0284" Z="388.9051" />
+      <Hotspot X="-6492.813" Y="669.8958" Z="386.9723" />
+      <Hotspot X="-6461.968" Y="643.8988" Z="386.9253" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="218" Name="Ice and Fire">
+  <Objective Type="KillMob" MobId="37514" KillCount="10">
+	  <Hotspots>
+      <Hotspot X="-6533.051" Y="459.2869" Z="386.6846" />
+      <Hotspot X="-6524.935" Y="419.5602" Z="386.1831" />
+      <Hotspot X="-6502.796" Y="385.7917" Z="385.2216" />
+      <Hotspot X="-6465.677" Y="371.0168" Z="378.9175" />
+      <Hotspot X="-6501.883" Y="353.3684" Z="374.0626" />
+      <Hotspot X="-6513.445" Y="314.7185" Z="373.2921" />
+      <Hotspot X="-6477.164" Y="332.0133" Z="374.8765" />
+		</Hotspots>
+	</Objective>
+  <Objective Type="KillMob" MobId="808" KillCount="1">
+	  <Hotspots>
+      <Hotspot X="-6502.403" Y="304.6788" Z="370.1679" />
+		</Hotspots>
+	</Objective>
+  <Objective Type="KillMob" MobId="37112" KillCount="1">
+	  <Hotspots>
+      <Hotspot X="-6500.651" Y="322.761" Z="368.4509" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="24492" Name="Pack Your Bags">
+	<Objective Type="CollectItem" ItemId="49756" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Leftover Boar Meat" Id="201704" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6097.441" Y="404.6163" Z="396.3878" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="49754" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Beer Barrel" Id="201706" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6068.594" Y="399.6858" Z="392.7571" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="49755" CollectCount="1">
+		<CollectFrom>
+      <GameObject Name="Wolf-Hide Cloaks" Id="201705" />
+    </CollectFrom>
+		<Hotspots>
+      <Hotspot X="-6047.205" Y="384.9983" Z="398.8753" />
+		</Hotspots>
+	</Objective>
+</Quest>
+
+<!-- End of Quest Overrides -->
+
+<QuestOrder>
+	  
+<!-- Dun Morogh Quests -->
+	<CustomBehavior File="Message" Text="Compiling Dun Morogh Quests" LogColor="Green" />
+	<CustomBehavior File="Message" Text="Compiling Coldridge Valley Quests" LogColor="CornflowerBlue" />
+	<CustomBehavior File="UserSettings" DrinkAmount="20" FoodAmount="20" FindVendorsAutomatically="True" TrainNewSkills="False" UseFlightPaths="True" PullDistance="25" LootMobs="True" UseMount="True"/>
+	<CustomBehavior File="RunMacro" Macro="/script SetCVar('AutoLootDefault', 1)" NumOfTimes="1" WaitTime="1000" />
+			<!--///////////////////////////////////////////////////////////////
+								            START QUEST
+		///////////////////////////////////////////////////////////////-->
+<!--Hold The Line -->
+	<PickUp QuestName="Hold the Line!" QuestId="24469" GiverName="Joren Ironstock" GiverId="37081" />
+	<Objective QuestName="Hold the Line!" QuestId="24469" Type="KillMob" MobId="37070" KillCount="6" />
+	<TurnIn QuestName="Hold the Line!" QuestId="24469" TurnInName="Joren Ironstock" TurnInId="37081" />
+
+<!-- Give 'em What-For/Aid for the Wounded -->
+	<PickUp QuestName="Give 'em What-For" QuestId="24470" GiverName="Joren Ironstock" GiverId="37081" />
+	<PickUp QuestName="Aid for the Wounded" QuestId="24471" GiverName="Sten Stoutarm" GiverId="658" />
+	<Objective QuestName="Give 'em What-For" QuestId="24470" Type="KillMob" MobId="37073" KillCount="3" />
+	<While Condition="HasQuest(24471) &amp;&amp; !IsQuestCompleted(24471)">
+		<CustomBehavior File="UseItemOn" QuestId="24471" MobId="37080" ItemId="49743" NumOfTimes="1" WaitTime="2000" MobType="Npc" CollectionDistance="115" X="-6288.863" Y="386.9096" Z="381.4375" />
+	</While>
+	<TurnIn QuestName="Aid for the Wounded" QuestId="24471" TurnInName="Sten Stoutarm" TurnInId="658" />
+	<TurnIn QuestName="Give 'em What-For" QuestId="24470" TurnInName="Joren Ironstock" TurnInId="37081" />
+	
+ <!--Lockdown in Anvilmar -->
+	<PickUp QuestName="Lockdown in Anvilmar" QuestId="24473" GiverName="Joren Ironstock" GiverId="37081" />
+	<TurnIn QuestName="Lockdown in Anvilmar" QuestId="24473" TurnInName="Jona Ironstock" TurnInId="37087" />
+	
+<!-- First Things First/Dwarven Artifacts -->
+	<PickUp QuestName="First Things First: We're Gonna Need Some Beer" QuestId="24474" GiverName="Jona Ironstock" GiverId="37087" />
+	<PickUp QuestName="Dwarven Artifacts" QuestId="24477" GiverName="Grundel Harkin" GiverId="1104" />
+	<Objective QuestName="First Things First: We're Gonna Need Some Beer" QuestId="24474" Type="CollectItem" ItemId="49744" CollectCount="1" />
+	<Objective QuestName="First Things First: We're Gonna Need Some Beer" QuestId="24474" Type="CollectItem" ItemId="49746" CollectCount="1" />
+	<Objective QuestName="First Things First: We're Gonna Need Some Beer" QuestId="24474" Type="CollectItem" ItemId="49745" CollectCount="1" />
+	<Objective QuestName="Dwarven Artifacts" QuestId="24477" Type="CollectItem" ItemId="49749" CollectCount="5" />
+	<TurnIn QuestName="Dwarven Artifacts" QuestId="24477" TurnInName="Grundel Harkin" TurnInId="1104" />
+	<TurnIn QuestName="First Things First: We're Gonna Need Some Beer" QuestId="24474" TurnInName="Jona Ironstock" TurnInId="37087" />
+	
+ <!--Make Hay While the Sun Shines/All the Other Stuff -->
+	<PickUp QuestName="Make Hay While the Sun Shines" QuestId="24486" GiverName="Grundel Harkin" GiverId="1104" />
+	<PickUp QuestName="All the Other Stuff" QuestId="24475" GiverName="Jona Ironstock" GiverId="37087" />
+	<Objective QuestName="Make Hay While the Sun Shines" QuestId="24486" Type="CollectItem" ItemId="49751" CollectCount="5" />
+	<Objective QuestName="All the Other Stuff" QuestId="24475" Type="CollectItem" ItemId="49747" CollectCount="3" />
+	<Objective QuestName="All the Other Stuff" QuestId="24475" Type="CollectItem" ItemId="49748" CollectCount="4" />
+	<TurnIn QuestName="Make Hay While the Sun Shines" QuestId="24486" TurnInName="Grundel Harkin" TurnInId="1104" />
+	<TurnIn QuestName="All the Other Stuff" QuestId="24475" TurnInName="Jona Ironstock" TurnInId="37087" />
+
+<!--Whitebeard Needs Ye/Class quest -->
+	<PickUp QuestName="Whitebeard Needs Ye" QuestId="24487" GiverName="Jona Ironstock" GiverId="37087" />
+	<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+		<PickUp QuestName="Consecrated Rune" QuestId="3107" GiverName="Jona Ironstock" GiverId="37087" />
+		<TurnIn QuestName="Consecrated Rune" QuestId="3107" TurnInName="Bromos Grummner" TurnInId="926" />
+	</If>
+	<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+		<PickUp QuestName="Etched Rune" QuestId="3108" GiverName="Jona Ironstock" GiverId="37087" />
+		<TurnIn QuestName="Etched Rune" QuestId="3108" TurnInName="Thorgas Grimson" TurnInId="895" />
+	</If>
+	<If Condition="Me.Class == (WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+		<PickUp QuestName="Empowered Rune" QuestId="24494" GiverName="Jona Ironstock" GiverId="37087" />
+		<TurnIn QuestName="Empowered Rune" QuestId="24494" TurnInName="Teo Hammerstorm" TurnInId="37115" />
+	</If>
+	<If Condition="HasQuest(24487)" >
+		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+	</If>
+	<TurnIn QuestName="Whitebeard Needs Ye" QuestId="24487" TurnInName="Grelin Whitebeard" TurnInId="786" />
+	
+ <!--The Troll Menace/Trolling for Information/A Refugee's Quandry  -->
+	<PickUp QuestName="The Troll Menace" QuestId="182" GiverName="Grelin Whitebeard" GiverId="786" />
+	<PickUp QuestName="Trolling for Information" QuestId="24489" GiverName="Apprentice Soren" GiverId="1354" />
+	<PickUp QuestName="A Refugee's Quandary" QuestId="3361" GiverName="Felix Whindlebolt" GiverId="8416" />
+	<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="10438" CollectCount="1" />
+	<While Condition="(HasQuest(24489) &amp;&amp; !IsObjectiveComplete(3, 24489))">
+		<RunTo X="-6396.564" Y="778.0911" Z="386.2134" />  <!--Mirim'koa-->
+		<CustomBehavior File="WaitTimer" WaitTime="12000" GoalText="Waiting for objective to complete {TimeRemaining}" />
+	</While>
+	<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16313" CollectCount="1" />
+	<While Condition="(HasQuest(24489) &amp;&amp; !IsObjectiveComplete(2, 24489))">
+		<RunTo X="-6512.898" Y="687.8277" Z="387.2748" /> <!-- Rikkari-->
+		<CustomBehavior File="WaitTimer" WaitTime="12000" GoalText="Waiting for objective to complete {TimeRemaining}" />
+	</While>
+	<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16314" CollectCount="1" />
+	<While Condition="(HasQuest(24489) &amp;&amp; !IsObjectiveComplete(1, 24489))">
+		<RunTo X="-6487.4" Y="505.2996" Z="386.0609" /> <!-- Shi'kala -->
+		<CustomBehavior File="WaitTimer" WaitTime="12000" GoalText="Waiting for objective to complete {TimeRemaining}" />
+	</While>
+	<Objective QuestName="The Troll Menace" QuestId="182" Type="KillMob" MobId="706" KillCount="10" />
+	<TurnIn QuestName="A Refugee's Quandary" QuestId="3361" TurnInName="Felix Whindlebolt" TurnInId="8416" />
+	<TurnIn QuestName="Trolling for Information" QuestId="24489" TurnInName="Apprentice Soren" TurnInId="1354" />
+	<TurnIn QuestName="The Troll Menace" QuestId="182" TurnInName="Grelin Whitebeard" TurnInId="786" />
+	
+<!-- Ice and Fire -->
+	<PickUp QuestName="Ice and Fire" QuestId="218" GiverName="Grelin Whitebeard" GiverId="786" />
+	<Objective QuestName="Ice and Fire" QuestId="218" Type="KillMob" MobId="37112" KillCount="1" />
+	<Objective QuestName="Ice and Fire" QuestId="218" Type="KillMob" MobId="808" KillCount="1" />
+	<Objective QuestName="Ice and Fire" QuestId="218" Type="KillMob" MobId="37514" KillCount="10" />
+	<TurnIn QuestName="Ice and Fire" QuestId="218" TurnInName="Grelin Whitebeard" TurnInId="786" />
+	
+<!-- A Trip to Ironforge -->
+	<PickUp QuestName="A Trip to Ironforge" QuestId="24490" GiverName="Grelin Whitebeard" GiverId="786" />
+	<If Condition="HasQuest(24490)">
+    <CustomBehavior File="Message" Text="Go home" LogColor="Yellow" />
+    <CustomBehavior File="Misc\RunLua" Lua="UseItemByName(6948)" WaitTime="1000" /><!-- UseHearthstone -->
+    <CustomBehavior File="WaitTimer" WaitTime="11000" />
+  </If>
+	<TurnIn QuestName="A Trip to Ironforge" QuestId="24490" TurnInName="Hands Springsprocket" TurnInId="6782" />
+	
+ <!--Follow that Gyro-Copter -->
+	<PickUp QuestName="Follow that Gyro-Copter!" QuestId="24491" GiverName="Hands Springsprocket" GiverId="6782" />
+	<TurnIn QuestName="Follow that Gyro-Copter!" QuestId="24491" TurnInName="Milo Geartwinge" TurnInId="37113" />
+	
+ <!--Pack Your Bags/Don't Forget About Us -->
+	<PickUp QuestName="Pack Your Bags" QuestId="24492" GiverName="Milo Geartwinge" GiverId="37113" />
+	<PickUp QuestName="Don't Forget About Us" QuestId="24493" GiverName="Jona Ironstock" GiverId="37087" />
+	<Objective QuestName="Pack Your Bags" QuestId="24492" Type="CollectItem" ItemId="49755" CollectCount="1" />
+	<Objective QuestName="Pack Your Bags" QuestId="24492" Type="CollectItem" ItemId="49754" CollectCount="1" />
+	<Objective QuestName="Pack Your Bags" QuestId="24492" Type="CollectItem" ItemId="49756" CollectCount="1" />
+	<TurnIn QuestName="Pack Your Bags" QuestId="24492" TurnInName="Milo Geartwinge" TurnInId="37113" />
+	<If Condition="HasQuest(24493)">
+		<CustomBehavior File="WaitTimer" WaitTime="90000" />
+	</If>
+	<TurnIn QuestName="Don't Forget About Us" QuestId="24493" TurnInName="Tharek Blackstone" TurnInId="1872" />
+	<If Condition="HasItem(57540)" >
+		<CustomBehavior File="Message" Text="Use Coldridge Mountaineer's Pouch" LogColor="Yellow" />
+		<CustomBehavior File="Misc\RunLua" Lua="UseItemByName(57540)" /> <!-- Use item Coldridge Mountaineer's Pouch -->
+	</If>
+			<!--///////////////////////////////////////////////////////////////
+								              END QUEST
+		///////////////////////////////////////////////////////////////-->
+	<CustomBehavior File="Message" Text="Dwarven Starter Complete" LogColor="Orange" />
+
+	<CustomBehavior File="LoadProfile" ProfileName="[A]Dun Morogh" />
+
+</QuestOrder>
+</HBProfile>
