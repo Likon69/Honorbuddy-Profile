@@ -443,7 +443,6 @@
 		<If Condition="HasQuest(2159)">
 			<TurnIn QuestId="2159" QuestName="Dolanaar Delivery" TurnInId="6736" TurnInName="Innkeeper Keldamyr"/>
 			<CustomBehavior File="SetHearthstone" HearthLocation="186" MobId="6736" X="9802.21" Y="982.608" Z="1313.896"/>
-			<CustomBehavior File="ForceSetVendor" DoMail="True" DoSell="True" />
 		</If>
 		<TurnIn QuestId="28731" QuestName="Teldrassil: Passing Awareness" TurnInId="3515" TurnInName="Corithras Moonrage"/>
 		<!--///////////////////////////////////////////////////////////////
