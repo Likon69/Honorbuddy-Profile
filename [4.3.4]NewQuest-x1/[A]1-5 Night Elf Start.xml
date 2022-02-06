@@ -293,7 +293,6 @@
 			<CustomBehavior CollectionDistance="300" File="InteractWith" MobId="195074" NumOfTimes="1" ObjectType="Gameobject" QuestId="28715" WaitTime="500" X="10271.99" Y="996.001" Z="1342.753"/>
 		</While>
 		<TurnIn QuestId="28715" QuestName="Demonic Thieves" TurnInId="2077" TurnInName="Melithar Staghelm"/>
-		<CustomBehavior File="UserSettings" TrainNewSkills="True"/><!-- Train ON -->
 		<!-- Class Quests -->
 		<!-- Warrior -->
 		<If Condition="Me.Class == WoWClass.Warrior">
@@ -302,7 +301,7 @@
 			<PickUp GiverId="3593" GiverName="Alyissia" QuestId="26945" QuestName="Learning New Techniques" X="10526.61" Y="778.0858" Z="1329.6"/>
 			<If Condition="!IsQuestCompleted(26945)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(100)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 				</If>
 				<RunTo X="10477.79" Y="800.3195" Z="1324.95"/>
 				<CustomBehavior AllowBotStop="True" ExpiryAction="InputEnabled_Continue" ExpiryTime="45" File="UserDialog" SoundCue="Exclamation" SoundCueInterval="3" Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING"/>
@@ -317,7 +316,7 @@
 			<PickUp GiverId="3596" GiverName="Ayanna Everstride" QuestId="26947" QuestName="A Woodsman's Training" X="10448.12" Y="777.9965" Z="1322.666"/>
 			<If Condition="!IsQuestCompleted(26947)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(56641)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 				</If>
 				<RunTo X="10450.46" Y="788.5908" Z="1322.682"/>
 				<CustomBehavior AllowBotStop="True" ExpiryAction="InputEnabled_Continue" ExpiryTime="45" File="UserDialog" SoundCue="Exclamation" SoundCueInterval="3" Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourselfAnd reboot the bot." Title="WARNING"/>
@@ -332,7 +331,7 @@
 			<PickUp GiverId="3594" GiverName="Frahun Shadewhisper" QuestId="26946" QuestName="A Rogue's Advantage" X="10519.15" Y="778.0143" Z="1329.6"/>
 			<If Condition="!IsQuestCompleted(26946)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(2098)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True"/>
 				</If>
 				<RunTo X="10477.79" Y="800.3195" Z="1324.95"/>
 				<CustomBehavior AllowBotStop="True" ExpiryAction="InputEnabled_Continue" ExpiryTime="45" File="UserDialog" SoundCue="Exclamation" SoundCueInterval="3" Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING"/>
@@ -347,7 +346,7 @@
 			<PickUp GiverId="3595" GiverName="Shanda" QuestId="26949" QuestName="Healing for the Wounded" X="10458.76" Y="801.6235" Z="1346.755"/>
 			<If Condition="!IsQuestCompleted(26949)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(2061)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True"/>
 				</If>
 				<CustomBehavior File="InteractWith" MobId="44617" QuestId="26949" Range="15" WaitForNpcs="True" WaitTime="500" X="10443.6" Y="780.323" Z="1337.285"/>
 				<CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(2061)" QuestId="26949" WaitTime="1000"/>
@@ -370,7 +369,7 @@
 			<PickUp GiverId="3597" GiverName="Mardant Strongoak" QuestId="26948" QuestName="A Healer's Touch" X="10485.95" Y="816.0121" Z="1322.745"/>
 			<If Condition="!IsQuestCompleted(26948)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(774)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True"/>
 				</If>
 				<CustomBehavior File="InteractWith" MobId="44617" QuestId="26948" Range="15" WaitForNpcs="True" WaitTime="500" X="10443.6" Y="780.323" Z="1337.285"/>
 				<CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(774)" QuestId="26948" WaitTime="500"/>
@@ -384,7 +383,7 @@
 			<PickUp GiverId="43006" GiverName="Rhyanda" QuestId="26940" QuestName="Arcane Missiles" X="10456.29" Y="804.882" Z="1346.755"/>
 			<If Condition="!IsQuestCompleted(26940)">
 				<If Condition="!Styx.Logic.Combat.SpellManager.HasSpell(5143)">
-					<CustomBehavior DoSell="True" DoTrain="True" File="ForceSetVendor"/>
+					<CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True"/>
 				</If>
 				<RunTo X="10451.48" Y="791.0925" Z="1322.685" />
 				<CustomBehavior File="UserDialog" AllowBotStop="True" ExpiryAction="InputEnabled_Continue" ExpiryTime="45" SoundCue="Exclamation" SoundCueInterval="3" Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING"/>
@@ -392,7 +391,6 @@
 			</If>
 			<TurnIn QuestId="26940" QuestName="Arcane Missiles" TurnInId="43006" TurnInName="Rhyanda" X="10456.29" Y="804.882" Z="1346.755"/>
 		</If>
-		<CustomBehavior File="UserSettings" TrainNewSkills="False"/><!-- Train OFF -->
 		<PickUp GiverId="43006" GiverName="Rhyanda" QuestId="28723" QuestName="Priestess of the Moon" X="10456.29" Y="804.882" Z="1346.755"/>
 		<TurnIn QuestId="28723" QuestName="Priestess of the Moon" TurnInId="49479" TurnInName="Dentaria Silverglade" X="10544.19" Y="874.4158" Z="1309.316"/>
 		<!-- Iverron's Antidote -->
@@ -426,18 +424,20 @@
 		<TurnIn QuestId="28729" QuestName="Teldrassil: Crown of Azeroth" TurnInId="49479" TurnInName="Dentaria Silverglade"/>
 		<!-- Precious Waters -->
 		<PickUp GiverId="49479" GiverName="Dentaria Silverglade" QuestId="28730" QuestName="Precious Waters"/>
-		<RunTo QuestId="49479" X="10443.47" Y="882.8818" Z="1318.206" />
-		<RunTo QuestId="49479" X="10426.95" Y="896.7598" Z="1318.501" />
-		<RunTo QuestId="49479" X="10416.62" Y="893.3249" Z="1319.139" />
-		<TurnIn QuestId="28730" QuestName="Precious Waters" TurnInId="3514" TurnInName="Tenaron Stormgrip"/>
+		<If Condition="HasQuest(49479)"	>
+			<RunTo QuestId="49479" X="10443.47" Y="882.8818" Z="1318.206" />
+			<RunTo QuestId="49479" X="10426.95" Y="896.7598" Z="1318.501" />
+			<RunTo QuestId="49479" X="10416.62" Y="893.3249" Z="1319.139" />
+			<TurnIn QuestId="28730" QuestName="Precious Waters" TurnInId="3514" TurnInName="Tenaron Stormgrip"/>
+		</If>
 		<!--Teldrassil: Passing Awareness/Dolanaar Delivery -->
 		<PickUp GiverId="3514" GiverName="Tenaron Stormgrip" QuestId="28731" QuestName="Teldrassil: Passing Awareness"/>
-		<If Condition="HasQuest(28731)">
+<!-- 		<If Condition="HasQuest(28731)">
 			<CustomBehavior File="Message" LogColor="Yellow" Text="Go home"/>
 			<CustomBehavior File="Misc\RunLua" Lua="UseItemByName(6948)" WaitTime="1000"/>
-			<!-- UseHearthstone -->
+			 UseHearthstone 
 			<CustomBehavior File="WaitTimer" WaitTime="11000"/>
-		</If>
+		</If> After it is more important the tp-->
 		<PickUp GiverId="6780" GiverName="Porthannius" QuestId="2159" QuestName="Dolanaar Delivery"/>
 		<PickUp GiverId="2150" GiverName="Zenn Foulhoof" QuestId="488" QuestName="Zenn's Bidding"/>
 		<If Condition="HasQuest(2159)">
