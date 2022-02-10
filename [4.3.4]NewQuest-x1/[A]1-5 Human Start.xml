@@ -23,7 +23,7 @@
 		<Mob Name="Landlocked Grouper" Entry="45664" />
 		<Mob Name="Midsummer Celebrant" Entry="16781" />
 		<!-- Northshire -->
-		<Mob Name="Training Dummy" Entry="44548" />
+		<Mob Name="Training Dummy" Entry="44848" />
 		<!-- Elwynn Forest -->
 		<Mob Name="Fedfennel" Entry="472" />
 	</AvoidMobs>
@@ -546,10 +546,10 @@
 	<!-- Hunter only -->
 	<If Condition="Me.Class == WoWClass.Hunter" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28767" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28767" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28767" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28767" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28759" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28759" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28759" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28759" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Etched Letter" QuestId="26910" GiverName="Marshal McBride" GiverId="197" />
 	<TurnIn QuestName="Etched Letter" QuestId="26910" TurnInName="Ashley Blank" TurnInId="43278" />
@@ -559,9 +559,8 @@
 	  <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
 	</While>
 	<While Condition="!IsQuestCompleted(26917)" >
-		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-			Text="This class quest is impossible to do properly.  QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-		<CustomBehavior File="CastSpellOn" QuestId="26917" SpellId="56641" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+		<RunTo X="-8947.231" Y="-153.56" Z="81.86499" />
+    <CustomBehavior File="CastSpellOn" QuestId="26917" SpellId="56641" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
   <TurnIn QuestName="The Hunter's Path" QuestId="26917" TurnInName="Ashley Blank" TurnInId="43278" />
   <PickUp QuestName="Join the Battle!" QuestId="28780" GiverName="Ashley Blank" GiverId="43278" />
@@ -569,7 +568,7 @@
 	<PickUp QuestName="They Sent Assassins" QuestId="28791" GiverName="Sergeant Willem" GiverId="823" />
 	<PickUp QuestName="Fear No Evil" QuestId="28806" GiverName="Brother Paxton" GiverId="951" />
 	<While Condition="!IsQuestCompleted(28806)" >
-			<CustomBehavior File="InteractWith" QuestId="28806" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+		<CustomBehavior File="InteractWith" QuestId="28806" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
 	</While>
 	<Objective QuestName="They Sent Assassins" QuestId="28791" Type="KillMob" MobId="50039" KillCount="8" />
 	<TurnIn QuestName="They Sent Assassins" QuestId="28791" TurnInName="Sergeant Willem" TurnInId="823" />
@@ -581,23 +580,21 @@
 	<!-- Warrior Only -->
 	<If Condition="Me.Class == WoWClass.Warrior" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28766" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28766" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28766" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28766" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28774" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28774" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28774" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28774" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Simple Letter" QuestId="3100" GiverName="Marshal McBride" GiverId="197" />
-	<TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" />
-  <PickUp QuestName="Charging into Battle" QuestId="26913" GiverId="911" />
 	<While Condition="!HasSpell(100)" >
-		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
     <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-	</While>
+  </While>
+  <TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" />
+  <PickUp QuestName="Charging into Battle" QuestId="26913" GiverId="911" />
 	<While Condition="!IsQuestCompleted(26913)" >
-	 <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-	 Text="This class quest is impossible to do properly.  QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-	 <RunTo QuestId="26913" X="-8946.368" Y="-146.042" Z="82.15112" />
-	 <CustomBehavior File="CastSpellOn" QuestId="26913" SpellId="100" MobId="44548" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+      <RunTo X="-8954.469" Y="-138.7499" Z="82.38262" />
+	   <CustomBehavior File="CastSpellOn" QuestId="26913" SpellId="100" MobId="44848" NumOfTimes="5" MinRange="12" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
 	<TurnIn QuestName="Charging into Battle" QuestId="26913" TurnInId="911" />
   <PickUp QuestName="Join the Battle!" QuestId="28789" GiverName="Llane Beshere" GiverId="911" />
@@ -617,36 +614,28 @@
 	<!-- Paladin Only -->
 	<If Condition="Me.Class == WoWClass.Paladin" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28762" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28762" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28762" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28762" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28770" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28770" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28770" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28770" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Consecrated Letter" QuestId="3101" GiverName="Marshal McBride" GiverId="197" />
-  <TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" />
-  <PickUp QuestName="The Power of the Light" QuestId="26918" GiverName="Brother Sammuel" GiverId="925" />
-	<While Condition="!HasSpell(20154)" >
+  <While Condition="!HasSpell(20154)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
     <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-	</While>
-  <While Condition="HasQuest(26918) &amp;&amp; !IsQuestCompleted(26918)" >
-    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-    Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" />
-    <CustomBehavior File="InteractWith" QuestId="26918" MobId="44548" KeepTargetSelected="True" Range="30" WaitTime="500" X="-8946.368" Y="-146.042" Z="82.15112" />
-    <CustomBehavior QuestId="26919" File="Misc\RunLua" Lua="CastSpellByID(20154)" WaitTime="500" />
   </While>
-		<!--<While Condition="!IsQuestCompleted(26918)" >
-			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-			Text="This class quest is impossible to do properly. He's too stupid. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-				<CustomBehavior File="CastSpellOn" QuestId="26918" SpellId="20271" MobId="44848" NumOfTimes="1" MinRange="3" Range="9" QuestCompleteRequirement="NotComplete" X="-8965.39" Y="-146.199" Z="81.5098" />
-		</While>-->
+  <TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" />
+  <PickUp QuestName="The Power of the Light" QuestId="26918" GiverName="Brother Sammuel" GiverId="925" />
+  <While Condition="HasQuest(26918) &amp;&amp; !IsQuestCompleted(26918)" >
+        <CustomBehavior File="CastSpellOn" QuestId="26918" SpellId="20271" MobId="44848" NumOfTimes="1" MinRange="3" Range="9" QuestCompleteRequirement="NotComplete" X="-8965.39" Y="-146.199" Z="81.5098" />
+  </While>
 	<TurnIn QuestName="The Power of the Light" QuestId="26918" TurnInName="" TurnInId="925" />
 	<PickUp QuestName="Join the Battle!" QuestId="28785" GiverName="Brother Sammuel" GiverId="925" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28785" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28793" GiverName="Sergeant Willem" GiverId="823" />
 	<PickUp QuestName="Fear No Evil" QuestId="28809" GiverName="Brother Paxton" GiverId="951" />
 	<While Condition="!IsQuestCompleted(28809)" >
-		<CustomBehavior File="InteractWith" QuestId="28809" MobId="50047" ObjectType="Npc" WaitTime="3000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+		<CustomBehavior File="InteractWith" QuestId="28809" MobId="50047" ObjectType="Npc" WaitTime="1000" X="-8775.286" Y="-139.6146" Z="82.16735" />
 	</While>
 	<Objective QuestName="They Sent Assassins" QuestId="28793" Type="KillMob" MobId="50039" KillCount="8" />
 	<TurnIn QuestName="They Sent Assassins" QuestId="28793" TurnInName="Sergeant Willem" TurnInId="823" />
@@ -660,23 +649,22 @@
 	<!-- Rogue Only -->
 	<If Condition="Me.Class == WoWClass.Rogue" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28764" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28764" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28764" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28764" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28772" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28772" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28772" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28772" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Encrypted Letter" QuestId="3102" GiverName="Marshal McBride" GiverId="197" />
-	<TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" />
-  <PickUp QuestName="The Deepest Cut" QuestId="26915" GiverName="" GiverId="915" />
 	<While Condition="!HasSpell(2098)" >
     <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
     <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-	</While>	
+  </While>  
+  <TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" />
+  <PickUp QuestName="The Deepest Cut" QuestId="26915" GiverName="" GiverId="915" />
 	<While Condition="!IsQuestCompleted(26915)" >
-		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-		Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" />
-		<CustomBehavior File="CastSpellOn" SpellId="1752" MobId="44548" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
-		<CustomBehavior File="CastSpellOn" SpellId="2098" MobId="44548" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
+		<RunTo X="-8947.231" Y="-153.56" Z="81.86499" />
+    <CustomBehavior File="CastSpellOn" SpellId="1752" MobId="44848" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
+		<CustomBehavior File="CastSpellOn" SpellId="2098" MobId="44848" NumOfTimes="1" Range="5"  X="-8960.057" Y="-145.9962" Z="81.51657" />
 	</While>
 	<TurnIn QuestName="The Deepest Cut" QuestId="26915" TurnInName="" TurnInId="915" />
   <PickUp QuestName="Join the Battle!" QuestId="28787" GiverName="Jorik Kerridan" GiverId="915" />
@@ -696,27 +684,21 @@
 	<!-- Priest Only -->
 	<If Condition="Me.Class == WoWClass.Priest" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28763" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28763" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28763" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28763" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28771" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28771" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28771" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28771" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Hallowed Letter" QuestId="3103" GiverName="Marshal McBride" GiverId="197" />
-	<TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
-  <PickUp QuestName="Healing the Wounded" QuestId="26919" GiverName="" GiverId="375" />
 	<While Condition="!HasSpell(2061)" >
-		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
     <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-	</While>
-    <While Condition="HasQuest(26919) &amp;&amp; !IsQuestCompleted(26919)" >
-      <CustomBehavior File="InteractWith" QuestId="26919" MobId="44564" WaitForNpcs="True" Range="15" WaitTime="500" X="-8849.5" Y="-190.071" Z="81.93785" />
-      <CustomBehavior QuestId="26919" File="Misc\RunLua" Lua="CastSpellByID(2061)" WaitTime="500" />
-    </While>
-	<!--<While Condition="!IsQuestCompleted(26919)" >
-		<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-		Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-		<CustomBehavior File="CastSpellOn" SpellId="2061" MobId="44564" NumOfTimes="1" Range="30"  X="-8855.15" Y="-189.2598" Z="81.93628" />
-	</While>-->
+  </While>
+  <TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
+  <PickUp QuestName="Healing the Wounded" QuestId="26919" GiverName="" GiverId="375" />
+  <While Condition="HasQuest(26919) &amp;&amp; !IsQuestCompleted(26919)" >
+      <CustomBehavior File="CastSpellOn" SpellId="2061" MobId="44564" NumOfTimes="1" Range="30"  X="-8855.15" Y="-189.2598" Z="81.93628" />
+  </While>
 	<TurnIn QuestName="Healing the Wounded" QuestId="26919" TurnInName="" TurnInId="375" />
   <PickUp QuestName="Join the Battle!" QuestId="28786" GiverName="Priestess Anetta" GiverId="375" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28786" TurnInName="Sergeant Willem" TurnInId="823" />
@@ -735,32 +717,31 @@
 	<!-- Mage Only -->
 	<If Condition="Me.Class == WoWClass.Mage" >
 	<PickUp QuestName="Beating Them Back!" QuestId="28757" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28757" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28757" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28757" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28769" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28769" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28769" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28769" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Glyphic Letter" QuestId="3104" GiverName="Marshal McBride" GiverId="197" />
+  <While Condition="!HasSpell(5143)" >
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+  </While>
   <TurnIn QuestName="Glyphic Letter" QuestId="3104" TurnInName="Khelden Bremen" TurnInId="198" />
 	<PickUp QuestName="Mastering the Arcane" QuestId="26916" GiverName="" GiverId="198" />
-	<While Condition="!HasSpell(5143)" >
-		<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-	</While>
 	<While Condition="!IsQuestCompleted(26916)" >
-			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-			Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-			<CustomBehavior File="CastSpellOn" SpellId="133" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
-			<CustomBehavior File="CastSpellOn" SpellId="5143" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+    <RunTo X="-8947.231" Y="-153.56" Z="81.86499" />
+		<CustomBehavior File="CastSpellOn" SpellId="133" MobId="44848" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+		<CustomBehavior File="CastSpellOn" SpellId="5143" MobId="44848" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
 	</While>
 	<TurnIn QuestName="Mastering the Arcane" QuestId="26916" TurnInName="" TurnInId="198" />
   <PickUp QuestName="Join the Battle!" QuestId="28784" GiverName="Khelden Bremen" GiverId="198" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28784" TurnInName="Sergeant Willem" TurnInId="823" />
 	<PickUp QuestName="They Sent Assassins" QuestId="28792" GiverName="Sergeant Willem" GiverId="823" />
 	<PickUp QuestName="Fear No Evil" QuestId="28808" GiverName="Brother Paxton" GiverId="951" />
-		<While Condition="!IsQuestCompleted(28808)" >
-			<CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
-		</While>
+	<While Condition="!IsQuestCompleted(28808)" >
+		<CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
 	<Objective QuestName="They Sent Assassins" QuestId="28792" Type="KillMob" MobId="50039" KillCount="8" />
 	<TurnIn QuestName="They Sent Assassins" QuestId="28792" TurnInName="Sergeant Willem" TurnInId="823" />
 	<TurnIn QuestName="Fear No Evil" QuestId="28808" TurnInName="Brother Paxton" TurnInId="951" />
@@ -770,36 +751,31 @@
 	
 	<!-- Warlock Only -->
 	<If Condition="Me.Class == WoWClass.Warlock" >
-    <If Condition="!HasQuest(28765) &amp;&amp; !IsQuestCompleted(28765)" >
-    <CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue"
-    Text="This class has a bug. The character does not move for singular (is rotation CR). Use Zerfall, put hims in Honorbuddy/Custom Classe/Zerfall." Title="WARNING" />
-  </If> 
 	<PickUp QuestName="Beating Them Back!" QuestId="28765" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Beating Them Back!" QuestId="28765" Type="KillMob" MobId="49871" KillCount="6" />
+	<Objective QuestName="Beating Them Back!" QuestId="28765" Type="KillMob" MobId="49871" KillCount="6" />
 	<TurnIn QuestName="Beating Them Back!" QuestId="28765" TurnInName="Marshal McBride" TurnInId="197" />
 	<PickUp QuestName="Lions for Lambs" QuestId="28773" GiverName="Marshal McBride" GiverId="197" />
-		<Objective QuestName="Lions for Lambs" QuestId="28773" Type="KillMob" MobId="49874" KillCount="8" />
+	<Objective QuestName="Lions for Lambs" QuestId="28773" Type="KillMob" MobId="49874" KillCount="8" />
 	<TurnIn QuestName="Lions for Lambs" QuestId="28773" TurnInName="Marshal McBride" TurnInId="197" />	
 	<PickUp QuestName="Tainted Letter" QuestId="3105" GiverName="Marshal McBride" GiverId="197" />
+  <While Condition="!HasSpell(348)" >
+    <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
+    <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+  </While>
   <TurnIn QuestName="Tainted Letter" QuestId="3105" TurnInName="Drusilla La Salle" TurnInId="459" />
 	<PickUp QuestName="Immolation" QuestId="26914" GiverName="" GiverId="459" />
-		<While Condition="!HasSpell(348)" >
-			<CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
-      <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
-		</While>
-		<While Condition="!IsQuestCompleted(26914)" >
-			<CustomBehavior File="UserDialog" AllowBotStop="False" SoundCue="Exclamation" SoundCueInterval="5" ExpiryTime="45" ExpiryAction="InputEnabled_Continue" 
-			Text="This class quest is impossible to do properly. QB CastSpellOn bug. Stop the bot and do it yourself. And reboot the bot." Title="WARNING" /> 
-			<CustomBehavior File="CastSpellOn" SpellId="348" MobId="44548" NumOfTimes="1" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
-		</While>
+	<While Condition="!IsQuestCompleted(26914)" >
+      <RunTo X="-8947.231" Y="-153.56" Z="81.86499" />
+			<CustomBehavior File="CastSpellOn" SpellId="348" MobId="44848" NumOfTimes="5" MinRange="10" Range="30" X="-8946.368" Y="-146.042" Z="82.15112" />
+	</While>
 	<TurnIn QuestName="Immolation" QuestId="26914" TurnInName="" TurnInId="459" />
   <PickUp QuestName="Join the Battle!" QuestId="28788" GiverName="Drusilla La Salle" GiverId="459" />
 	<TurnIn QuestName="Join the Battle!" QuestId="28788" TurnInName="Sergeant Willem" TurnInId="823" />
-		<PickUp QuestName="They Sent Assassins" QuestId="28796" GiverName="Sergeant Willem" GiverId="823" />
+	   <PickUp QuestName="They Sent Assassins" QuestId="28796" GiverName="Sergeant Willem" GiverId="823" />
 	<PickUp QuestName="Fear No Evil" QuestId="28812" GiverName="Brother Paxton" GiverId="951" />
-		<While Condition="!IsQuestCompleted(28812)" >
-			<CustomBehavior File="InteractWith" QuestId="28812" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
-		</While>
+	<While Condition="!IsQuestCompleted(28812)" >
+		<CustomBehavior File="InteractWith" QuestId="28812" MobId="50047" ObjectType="Npc" WaitTime="6000" X="-8775.286" Y="-139.6146" Z="82.16735" />
+	</While>
 	<Objective QuestName="They Sent Assassins" QuestId="28796" Type="KillMob" MobId="50039" KillCount="8" />
 	<TurnIn QuestName="They Sent Assassins" QuestId="28796" TurnInName="Sergeant Willem" TurnInId="823" />
 	<TurnIn QuestName="Fear No Evil" QuestId="28812" TurnInName="Brother Paxton" TurnInId="951" />
@@ -810,11 +786,12 @@
 	<!-- No class req-->
 	<PickUp QuestName="Blackrock Invasion" QuestId="26389" GiverName="Marshal McBride" GiverId="197" />
 	<PickUp QuestName="Extinguishing Hope" QuestId="26391" GiverId="9296" />
-    <While Condition="HasQuest(26391) &amp;&amp; !IsQuestCompleted(26391)">
-        <CustomBehavior File="UserSettings" PullDistance="10" />
-        <CustomBehavior File="UseItemOn" QuestId="26391" MobId="42940" ItemId="58362" NumOfTimes="8" WaitTime="3000" Range="10" CollectionDistance="100" X="-9063.322" Y="-277.0595" Z="73.64384" />
-        <CustomBehavior File="UserSettings" PullDistance="25" />
-    </While>
+  <While Condition="HasQuest(26391) &amp;&amp; !IsQuestCompleted(26391)">
+      <CustomBehavior File="UserSettings" PullDistance="10" />
+      <CustomBehavior File="UseItemOn" QuestId="26391" MobId="42940" ItemId="58362" NumOfTimes="8" WaitTime="3000" Range="10" CollectionDistance="100" X="-9063.322" Y="-277.0595" Z="73.64384" />
+      <CustomBehavior File="UserSettings" PullDistance="25" />
+      <CustomBehavior File="NoCombatMoveTo" X="-8954.469" Y="-138.7499" Z="82.38262" />
+  </While>
 	<Objective QuestName="Blackrock Invasion" QuestId="26389" Type="CollectItem" ItemId="58361" CollectCount="8" />
 	<TurnIn QuestName="Blackrock Invasion" QuestId="26389" TurnInName="Marshal McBride" TurnInId="197" />
 	<TurnIn QuestName="Extinguishing Hope" QuestId="26391" TurnInName="Milly Osworth" TurnInId="9296" />

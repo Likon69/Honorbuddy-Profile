@@ -305,7 +305,7 @@
 		<TurnIn QuestId="28734" QuestName="A Favor for Melithar" TurnInId="2077" TurnInName="Melithar Staghelm"/>
 		<PickUp GiverId="2077" GiverName="Melithar Staghelm" QuestId="28715" QuestName="Demonic Thieves"/>
 		<While Condition="HasQuest(28715) &amp;&amp; !IsQuestCompleted(28715)">
-			<CustomBehavior CollectionDistance="300" File="InteractWith" MobId="195074" NumOfTimes="1" ObjectType="Gameobject" QuestId="28715" WaitTime="500" X="10271.99" Y="996.001" Z="1342.753"/>
+			<CustomBehavior File="InteractWith" CollectionDistance="300" MobId="195074" NumOfTimes="1" ObjectType="Gameobject" QuestId="28715" WaitTime="500" X="10271.99" Y="996.001" Z="1342.753"/>
 		</While>
 		<TurnIn QuestId="28715" QuestName="Demonic Thieves" TurnInId="2077" TurnInName="Melithar Staghelm"/>
 		<!-- Class Quests -->
