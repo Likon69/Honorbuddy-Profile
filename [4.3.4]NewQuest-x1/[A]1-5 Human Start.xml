@@ -530,7 +530,7 @@
   
 <QuestOrder>
     <!--Level load-->
-  <If Condition="Me.Level &gt; 5 &amp;&amp; Me.Level &lt;= 11 &amp;&amp; Me.ZoneId == 1537 &amp;&amp; Me.ZoneId == 1" >
+  <If Condition="Me.Level &gt;= 5 &amp;&amp; Me.Level &lt;= 11" >
 	 <CustomBehavior File="LoadProfile" ProfileName="[A]5-11 Dun Morogh" />
   </If>
 	<CustomBehavior File="Message" Text="Compiling Elwynn Forest Quests" LogColor="Green" />	  
