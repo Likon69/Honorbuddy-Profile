@@ -556,6 +556,7 @@
     <While Condition="!HasSpell(56641)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
   	  <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
   	  <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
   	<While Condition="!IsQuestCompleted(26917)" >
@@ -589,6 +590,7 @@
   	<While Condition="!HasSpell(100)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
     <TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" />
@@ -624,6 +626,7 @@
     <While Condition="!HasSpell(20154)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
     <TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" />
@@ -658,6 +661,7 @@
   	<While Condition="!HasSpell(2098)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>  
     <TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" />
@@ -695,6 +699,7 @@
   	<While Condition="!HasSpell(2061)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
     <TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
@@ -707,9 +712,9 @@
   	<TurnIn QuestName="Join the Battle!" QuestId="28786" TurnInName="Sergeant Willem" TurnInId="823" />
   	<PickUp QuestName="They Sent Assassins" QuestId="28794" GiverName="Sergeant Willem" GiverId="823" />
   	<PickUp QuestName="Fear No Evil" QuestId="28808" GiverName="Brother Paxton" GiverId="951" />
-  	<While Condition="!IsQuestCompleted(28808)" >
-  		<CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" ObjectType="Npc" WaitTime="3000" X="-8775.286" Y="-139.6146" Z="82.16735" />
-  	</While>
+    <While Condition="HasQuest(28808) &amp;&amp; !IsQuestCompleted(28808)" >
+      <CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" NumOfTimes="4" CollectionDistance="500" X="-8769.394" Y="-190.3564" Z="84.5011" />
+    </While>
   	<Objective QuestName="They Sent Assassins" QuestId="28794" Type="KillMob" MobId="50039" KillCount="8" />
   	<TurnIn QuestName="They Sent Assassins" QuestId="28794" TurnInName="Sergeant Willem" TurnInId="823" />
   	<TurnIn QuestName="Fear No Evil" QuestId="28808" TurnInName="Brother Paxton" TurnInId="951" />
@@ -729,6 +734,7 @@
     <While Condition="!HasSpell(5143)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
     <TurnIn QuestName="Glyphic Letter" QuestId="3104" TurnInName="Khelden Bremen" TurnInId="198" />
@@ -765,6 +771,7 @@
     <While Condition="!HasSpell(348)" >
       <CustomBehavior File="Message" Text="Go Sell and buy skill" LogColor="Yellow" />
       <CustomBehavior File="ForceSetVendor" DoSell="True" DoTrain="True" />
+      <CustomBehavior File="WaitTimer" WaitTime="1000" />
       <CustomBehavior File="RunMacro" Macro="/click GossipFrameCloseButton" NumOfTimes="1" WaitTime="1000" />
     </While>
     <TurnIn QuestName="Tainted Letter" QuestId="3105" TurnInName="Drusilla La Salle" TurnInId="459" />
